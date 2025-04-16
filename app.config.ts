@@ -56,7 +56,6 @@ const YukinaConfig: Configuration = {
     "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
     "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg",
     "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg",
-    "/sdepMone.png",
   ],
 
   slugMode: "HASH", // 'RAW' | 'HASH'
