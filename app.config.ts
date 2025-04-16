@@ -28,16 +28,16 @@ const YukinaConfig: Configuration = {
   avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
   socialLinks: [
     {
-      icon: "line-md:github-loop",
-      link: "https://github.com/WhitePaper233",
+      icon: "mingcute:facebook-fill",
+      link: "https://www.facebook.com/share/1CLQF99Lyi/",
     },
     {
-      icon: "mingcute:bilibili-line",
-      link: "https://space.bilibili.com/22433608",
+      icon: "mingcute:tiktok-fill",
+      link: "https://www.tiktok.com/@sdep.mone",
     },
     {
-      icon: "mingcute:netease-music-line",
-      link: "https://music.163.com/#/user/home?id=125291648",
+      icon: "mingcute:whatsapp-fill",
+      link: "https://whatsapp.com/channel/0029Vb9eM4ZCXC3JMC4UtB1W",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
