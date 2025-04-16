@@ -1,11 +1,12 @@
 ---
 import YukinaConfig from "../../app.config";
 import { i18n } from "../locales/translation";
-
 import { Icon } from "astro-icon/components";
 import SearchBar from "./SearchBar.svelte";
 import MobileSearchBar from "./MobileSearchBar.svelte";
 import "astro-pagefind";
+
+const games = ["zelda", "mario", "kirby"];
 
 const navCount = YukinaConfig.navigators.length;
 ---
@@ -45,11 +46,20 @@ const navCount = YukinaConfig.navigators.length;
     </a>
     <div class="menu">
       {
-        YukinaConfig.navigators.map((nav) => (
-          <a href={nav.href}>
-            <p>{i18n(nav.nameKey)}</p>
-          </a>
-        ))
+        YukinaConfig.navigators.map((nav) =>
+          nav.href === "/games" ? (
+            <a
+              href="#"
+              onclick="document.getElementById('games-menu').classList.toggle('hidden')"
+            >
+              <p>{i18n(nav.nameKey)}</p>
+            </a>
+          ) : (
+            <a href={nav.href}>
+              <p>{i18n(nav.nameKey)}</p>
+            </a>
+          ),
+        )
       }
     </div>
     <div class="toolbar">
@@ -77,6 +87,20 @@ const navCount = YukinaConfig.navigators.length;
       </div>
     </div>
   </div>
+
+  <div id="games-menu" class="hidden flex-wrap gap-4 px-6 py-4">
+    {
+      games.map((game) => (
+        <a
+          href={`/games/${game}`}
+          class="rounded-lg bg-[var(--primary-color)] px-6 py-3 font-bold text-[var(--card-color)]"
+        >
+          {game}
+        </a>
+      ))
+    }
+  </div>
+
   <div id="mobile-menu" class="px-3 transition-all">
     <ul
       id="mobile-menu-nav"

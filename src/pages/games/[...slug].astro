@@ -1,66 +1,23 @@
 ---
-import { getCollection } from "astro:content";
-import { IdToSlug } from "../../utils/hash";
-import PostLayout from "../../layouts/PostLayout.astro";
-import { render } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
 
 export async function getStaticPaths() {
-  const postEntries = await getCollection("posts");
-  return postEntries.map((entry) => ({
-    params: { slug: IdToSlug(entry.id) },
-    props: { entry },
+  const games = ["zelda", "mario", "kirby"];
+
+  return games.map((slug) => ({
+    params: { slug },
+    props: { slug },
   }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { slug } = Astro.props;
 ---
 
-{
-  !entry.data.licenseName && (
-    <PostLayout
-      title={entry.data.title}
-      subTitle={entry.data.description}
-      bannerImage={entry.data.cover}
-      published={entry.data.published}
-    >
-      <div
-        class="hidden"
-        data-pagefind-body
-        data-pagefind-weight="10"
-        data-pagefind-meta="title"
-      >
-        {entry.data.title}
-      </div>
-      <div data-pagefind-body>
-        <Content />
-      </div>
-    </PostLayout>
-  )
-}
-{
-  entry.data.licenseName && (
-    <PostLayout
-      title={entry.data.title}
-      subTitle={entry.data.description}
-      bannerImage={entry.data.cover}
-      published={entry.data.published}
-      license={{ name: entry.data.licenseName, url: entry.data.licenseUrl }}
-      author={entry.data.author}
-      sourceLink={entry.data.sourceLink}
-    >
-      <div
-        class="hidden"
-        data-pagefind-body
-        data-pagefind-weight="10"
-        data-pagefind-meta="title"
-      >
-        {entry.data.title}
-      </div>
-      <div data-pagefind-body>
-        <Content />
-      </div>
-    </PostLayout>
-  )
-}
-<!-- <Fragment set:html={tocHTMLString} /> -->
+<MainLayout title={slug} subTitle={`Información sobre ${slug}`} slug={slug}>
+  <h1 class="text-4xl font-bold text-[var(--primary-color)]">
+    Juego: {slug}
+  </h1>
+  <p class="mt-4 text-lg text-[var(--text-color-lighten)]">
+    Esta es la página dedicada al juego <strong>{slug}</strong>.
+  </p>
+</MainLayout>
