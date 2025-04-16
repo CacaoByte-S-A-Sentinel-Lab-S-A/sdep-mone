@@ -1,4 +1,4 @@
-import YukinaConfig from "../../yukina.config";
+import YukinaConfig from "../../app.config";
 import CryptoJS from "crypto-js";
 
 /**

@@ -1,5 +1,5 @@
 import { GetIndexFromSlugID } from "./hash";
-import YukinaConfig from "../../yukina.config";
+import YukinaConfig from "../../app.config";
 
 /**
  * Retrieves the cover URL for an unspecified entry based on the provided ID.

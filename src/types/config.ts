@@ -9,7 +9,7 @@ interface Configuration {
 
   site: string;
 
-  locale: "en" | "zh-CN";
+  locale: "es" | "en";
 
   navigators: { nameKey: I18nKeys; href: string }[];
 

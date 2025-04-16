@@ -2,15 +2,15 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Yukina",
-  subTitle: "Yukina Template Demo Site",
-  brandTitle: "Yukina",
+  title: "SdepMone",
+  subTitle: "SdepMone Page",
+  brandTitle: "SdepMone",
 
-  description: "Demo Site",
+  description: "SdepMone Site",
 
   site: "https://yukina-blog.vercel.app",
 
-  locale: "en", // set for website language and date format
+  locale: "es", // set for website language and date format
 
   navigators: [
     {
@@ -19,15 +19,7 @@ const YukinaConfig: Configuration = {
     },
     {
       nameKey: I18nKeys.nav_bar_archive,
-      href: "/archive",
-    },
-    {
-      nameKey: I18nKeys.nav_bar_about,
-      href: "/about",
-    },
-    {
-      nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/WhitePaper233/yukina",
+      href: "/games",
     },
   ],
 
