@@ -12,13 +12,13 @@ import "overlayscrollbars/overlayscrollbars.css";
 
     --primary-color: hsl(32, 100%, 50%);
     --primary-color-lighten: hsl(32, 100%, 95%);
-    --primary-color-hover: hsl(32, 100%, 90%);
-    --primary-color-transparent: hsl(32, 100%, 50%, 0.15);
-    --text-color: hsl(0, 0%, 30%);
-    --text-color-lighten: hsl(0, 0%, 50%);
+    --primary-color-hover: hsl(32, 100%, 60%);
+    --primary-color-transparent: hsl(32, 100%, 50%, 0.12);
+    --text-color: hsl(0, 0%, 20%);
+    --text-color-lighten: hsl(0, 0%, 40%);
     --card-color: hsl(0, 0%, 100%);
     --card-color-transparent: hsl(0, 0%, 100%, 0.85);
-    --background-color: hsl(32, 100%, 97%);
+    --background-color: hsl(32, 100%, 98%);
 
     --brand-font: "Raleway", "Noto Sans SC", sans-serif;
     --primary-font: "Noto Sans SC", sans-serif;
@@ -38,15 +38,15 @@ import "overlayscrollbars/overlayscrollbars.css";
   }
 
   :root.dark {
-    --primary-color: hsl(32, 100%, 50%);
-    --primary-color-lighten: hsl(32, 100%, 40%);
-    --primary-color-hover: hsl(32, 100%, 20%);
-    --text-color: hsl(32, 10%, 95%);
-    --text-color-lighten: hsl(32, 10%, 90%);
-    --card-color: hsl(32, 10%, 25%);
-    --card-color-lighten: hsl(32, 10%, 40%);
-    --card-color-transparent: hsl(32, 10%, 30%, 0.85);
-    --background-color: hsl(32, 10%, 17.5%);
+    --primary-color: oklch(70% 0.2 var(--hue));
+    --primary-color-lighten: oklch(45% 0.06 var(--hue));
+    --primary-color-hover: oklch(60% 0.22 var(--hue));
+    --text-color: oklch(95% 0.005 var(--hue));
+    --text-color-lighten: oklch(85% 0.004 var(--hue));
+    --card-color: oklch(25% 0.02 var(--hue));
+    --card-color-lighten: oklch(40% 0.04 var(--hue));
+    --card-color-transparent: oklch(30% 0.025 var(--hue) / 85%);
+    --background-color: oklch(17.5% 0.015 var(--hue));
   }
 
   .swup-progress-bar {
