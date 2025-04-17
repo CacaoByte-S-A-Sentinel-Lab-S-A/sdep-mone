@@ -3,8 +3,9 @@ title: Blood Strike – Créditos y Recompensas
 published: 2024-01-15
 description: Recarga créditos y aprovecha recompensas especiales en Blood Strike.
 tags: [Créditos, Recompensas]
-category: Blood Strike
+category: Shooter Battle Royale
 draft: false
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMG3ANtJuJQ9H4w6UtM9Q4NhDNhJ-nMOJumQ&s
 ---
 
 Blood Strike es un battle royale intenso con recompensas diarias y eventos especiales. Aquí puedes obtener créditos para personalizar tu experiencia.

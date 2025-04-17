@@ -3,8 +3,9 @@ title: Arena Breakout – Créditos y Equipamiento
 published: 2023-07-14
 description: Compra créditos y mejora tu equipo en Arena Breakout, el shooter táctico del momento.
 tags: [Créditos, Equipamiento]
-category: Arena Breakout
+category: Shooter Táctico
 draft: false
+cover: https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg
 ---
 
 Arena Breakout es un shooter táctico donde cada misión importa. Aumenta tu inventario y equípate con los mejores ítems usando créditos.

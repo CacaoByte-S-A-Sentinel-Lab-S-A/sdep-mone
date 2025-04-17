@@ -3,8 +3,9 @@ title: Mobile Legends – Diamantes y Starlight
 published: 2016-07-11
 description: Obtén diamantes y el Pase Starlight en Mobile Legends al mejor precio.
 tags: [Diamantes, Pase Starlight]
-category: Mobile Legends
+category: 	MOBA
 draft: false
+cover: https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg
 ---
 
 Mobile Legends es uno de los MOBA más populares en móviles. Con los diamantes puedes desbloquear héroes, skins exclusivas y disfrutar del Pase Starlight mensual.
