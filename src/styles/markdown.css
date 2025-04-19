@@ -7,7 +7,7 @@
 }
 
 .article code:not(pre code) {
-  @apply text-sm;
+  /* @apply text-sm; */
   font-family: var(--code-font) !important;
   border-radius: 4px;
   color: var(--primary-color) !important;
