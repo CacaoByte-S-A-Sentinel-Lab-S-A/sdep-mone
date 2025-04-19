@@ -54,17 +54,25 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      console.log(values);
-      toast(
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(values, null, 2)}</code>
-        </pre>
-      );
+      const juego = values.name_1110064419;
+      const monedas = values.name_2435070634;
+      const idCuenta = values.name_9680451077;
+      const region = values.name_5232852522;
+  
+      const mensaje = `¡Hola Enrique! 👋\n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n- ID de cuenta: ${idCuenta}\n- Región/Servidor: ${region}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! 🙌`;
+  
+      const numeroWhatsApp = "50258261532"; 
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+  
+      window.open(url, "_blank"); 
+  
+      console.log(values); 
     } catch (error) {
       console.error("Form submission error", error);
       toast.error("Failed to submit the form. Please try again.");
     }
   }
+  
 
   return (
     <Form {...form}>

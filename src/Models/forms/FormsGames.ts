@@ -23,7 +23,7 @@ export const FormsGames = [
       "placeholder": "Cantidad",
       "required": true,
       "rowIndex": 0,
-      "type": "number",
+      "type": "text",
       "value": "",
       "variant": "Input",
       "min": 1
