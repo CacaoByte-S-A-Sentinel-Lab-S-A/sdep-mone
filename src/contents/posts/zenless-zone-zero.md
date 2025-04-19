@@ -6,7 +6,7 @@ tags: [Bonos, Tickets]
 category: RPG de Acción
 draft: false
 cover: https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg
-gameSlug: free-fire 
+gameSlug: zenless-zone-zero
 gameId: 1  
 ---
 

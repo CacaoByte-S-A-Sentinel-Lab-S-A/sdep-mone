@@ -2,7 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 
 export async function getStaticPaths() {
-  const games = ["free-fire", "mobile-legends", "honor-kings"];
+  const games = ["free-fire", "mobile-legends", "honor-kings", "genshin-impact", "honkai-start-rail", "blood-strike", "zenless-zone-zero", "arena-breakout", "farlight", "pubg"];
 
   return games.map((game) => ({
     params: { slug: game },

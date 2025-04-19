@@ -6,7 +6,7 @@ tags: [UC, Royale Pass]
 category: Battle Royale
 draft: false
 cover: https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg
-gameSlug: free-fire 
+gameSlug: pubg
 gameId: 1  
 ---
 
