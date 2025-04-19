@@ -1,7 +1,19 @@
 ---
+import FormsGamesWhatsApp from "@/components/forms/FormsGames";
+import MainLayout from "../../../layouts/MainLayout.astro";
 export const prerender = false;
 
 const { game, id } = Astro.params;
 ---
 
-<h1>{game}: {id}</h1>
+<!-- <h1>{game}: {id}</h1> -->
+<MainLayout title={game} subTitle={`ID: ${id}`} slug={game}>
+
+
+<FormsGamesWhatsApp 
+  gameName={game ?? ""} 
+  coinAmount={id ?? ""} 
+  client:load 
+/>
+
+</MainLayout>

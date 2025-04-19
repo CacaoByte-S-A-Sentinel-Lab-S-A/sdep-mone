@@ -6,6 +6,8 @@ tags: [Oro, Pase de Batalla]
 category: Shooter Futurista
 draft: false
 cover: https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg
+gameSlug: free-fire 
+gameId: 1  
 ---
 
 Farlight 84 es un shooter futurista con mecánicas explosivas y héroes únicos. Con el oro puedes mejorar tu arsenal y obtener skins exclusivas. Además, el Pase de Batalla te brinda recompensas únicas cada temporada.

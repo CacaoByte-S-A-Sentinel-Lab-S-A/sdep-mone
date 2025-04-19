@@ -6,6 +6,8 @@ tags: [Jade Estelar, Pase de Batalla]
 category: RPG por Turnos
 draft: false
 cover: https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart
+gameSlug: free-fire 
+gameId: 1  
 ---
 
 Honkai Star Rail te lleva a explorar mundos únicos mientras fortaleces tu equipo. Obtén jade estelar y aprovecha el pase de batalla para maximizar tus recompensas.
