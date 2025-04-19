@@ -1,10 +1,11 @@
 ---
 import "../styles/global.css";
+import "./main-layout.css";
 import Base from "./BaseLayout.astro";
 import NavBar from "../components/NavBar.astro";
 import Banner from "../components/Banner.astro";
 
-import YukinaConfig from "../../app.config";
+import SdepMoneConfig from "../../app.config";
 import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 
@@ -22,7 +23,7 @@ const props = Astro.props;
   <NavBar />
 
   {
-    YukinaConfig.bannerStyle == "LOOP" && (
+    SdepMoneConfig.bannerStyle == "LOOP" && (
       <Banner
         title={props.title}
         subTitle={props.subTitle}

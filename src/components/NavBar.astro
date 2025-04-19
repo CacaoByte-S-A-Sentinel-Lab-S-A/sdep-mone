@@ -1,20 +1,21 @@
 ---
-import YukinaConfig from "../../app.config";
+import "astro-pagefind";
+import "@/styles/components/navbar.css";
+
+import SdepMoneConfig from "../../app.config";
 import { i18n } from "../locales/translation";
 import { Icon } from "astro-icon/components";
 import SearchBar from "./SearchBar.svelte";
 import MobileSearchBar from "./MobileSearchBar.svelte";
-import "astro-pagefind";
 
-const games = ["zelda", "mario", "kirby"];
-
-const navCount = YukinaConfig.navigators.length;
+const navCount = SdepMoneConfig.navigators.length;
 ---
 
 <nav class="nav" id="nav">
   <div
     class="relative flex h-[4rem] w-full items-center justify-between overflow-visible lg:h-[4.5rem]"
   >
+    <!-- Mobile -->
     <div class="brand after:content-['']">
       <button
         id="menu-switcher"
@@ -34,34 +35,22 @@ const navCount = YukinaConfig.navigators.length;
           class="mx-auto hidden"
         />
       </button>
-      <a class="title" href="/">
-        {YukinaConfig.brandTitle}
+      <a class="title-navbar" href="/">
+        {SdepMoneConfig.brandTitle}
       </a>
     </div>
+    <!-- Desktop -->
     <a class="brand-lg" href="/">
-      <div class="title space-x-2">
-        <Icon name="heroicons:home" size={32} />
-        <p>{YukinaConfig.brandTitle}</p>
+      <div class="title-navbar">
+        <img
+        class="lozad left-0 top-0 h-10 rounded-l-3xl mr-2"
+        data-src={SdepMoneConfig.logoUrl}
+        alt="Logo"
+      />
+        <p>{SdepMoneConfig.brandTitle}</p>
       </div>
     </a>
-    <!-- <div class="menu">
-      {
-        YukinaConfig.navigators.map((nav) =>
-          nav.href === "/games" ? (
-            <a
-              href="#"
-              onclick="document.getElementById('games-menu').classList.toggle('hidden')"
-            >
-              <p>{i18n(nav.nameKey)}</p>
-            </a>
-          ) : (
-            <a href={nav.href}>
-              <p>{i18n(nav.nameKey)}</p>
-            </a>
-          ),
-        )
-      }
-    </div> -->
+
     <div class="toolbar">
       <div class="lg:hidden">
         <MobileSearchBar client:only="svelte" />
@@ -94,7 +83,7 @@ const navCount = YukinaConfig.navigators.length;
       class="mobile-menu-nav mobile-menu-nav-closed flex flex-col space-y-6 overflow-hidden text-xl font-medium text-[var(--text-color)] transition-all duration-300"
     >
       {
-        YukinaConfig.navigators.map((nav) => (
+        SdepMoneConfig.navigators.map((nav) => (
           <li class="mt-1">
             <a href={nav.href} class="mobile-nav-item">
               <div class="flex flex-row items-center space-x-2">
@@ -115,6 +104,7 @@ const navCount = YukinaConfig.navigators.length;
 
 <style define:vars={{ navCount }}>
   .mobile-menu-nav-opened {
+    opacity: 1;
     height: calc(var(--navCount) * 52px);
   }
 </style>

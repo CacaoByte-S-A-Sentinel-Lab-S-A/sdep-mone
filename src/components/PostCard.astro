@@ -1,11 +1,12 @@
 ---
+import "../styles/pages/post-card.css";
 import { IdToSlug } from "../utils/hash";
 import { Icon } from "astro-icon/components";
 import PostCardInfoIcon from "./widgets/PostCardInfoIcon.astro";
 import { GetCoverURLForUnspecifiedEntry } from "../utils/cover";
 import { i18n } from "../locales/translation";
 import I18nKeys from "../locales/keys";
-import YukinaConfig from "../../app.config";
+import SdepMoneConfig from "../../app.config";
 import { formatDate } from "../utils/date";
 
 export interface Props {
@@ -33,7 +34,7 @@ const { time, wordCount } = props.readingMetadata;
     class="relative h-[128px] transition-all hover:brightness-75 lg:hidden"
   >
     <img
-      class="lozad absolute left-0 top-0 h-full w-full rounded-t-3xl object-cover lg:hidden"
+      class="lozad absolute top-0 left-0 h-full w-full rounded-t-3xl object-cover lg:hidden"
       data-src={props.image ?? GetCoverURLForUnspecifiedEntry(entryID)}
       alt="CoverPost"
     />
@@ -44,14 +45,14 @@ const { time, wordCount } = props.readingMetadata;
         >
           <Icon name="cuida:calendar-outline" />
           <span class="select-none">
-            {formatDate(props.published, YukinaConfig.locale)}
+            {formatDate(props.published, SdepMoneConfig.locale)}
           </span>
         </div>
         {
           props.category && (
             <div class="flex flex-row items-center space-x-2 rounded-md bg-black/50 px-1.5 py-0.5 text-[var(--primary-color-lighten)] dark:text-[var(--text-color)]">
               <Icon name="dashicons:category" />
-              <span class="max-w-28 select-none truncate">
+              <span class="max-w-28 truncate select-none">
                 {props.category}
               </span>
             </div>
@@ -62,14 +63,14 @@ const { time, wordCount } = props.readingMetadata;
   </a>
   <div class="flex h-[128px] flex-row lg:h-[212px]">
     <div
-      class="flex w-full flex-col justify-between pb-5 pl-5 pr-6 pt-3 lg:w-[calc(var(--page-width-lg)-404px)] lg:py-7 lg:pr-0 xl:w-[calc(var(--page-width-xl)-676px)]"
+      class="flex w-full flex-col justify-between pt-3 pr-6 pb-5 pl-5 lg:w-[calc(var(--page-width-lg)-404px)] lg:py-7 lg:pr-0 xl:w-[calc(var(--page-width-xl)-676px)]"
     >
       <div class="flex w-full flex-row items-center">
         <div
           class="mx-2 hidden h-6 w-1 translate-y-[1px] rounded-lg bg-[var(--primary-color)] lg:block"
         >
         </div>
-        <a href={contentUrl} class="title">
+        <a href={contentUrl} class="title-post">
           <p class="truncate">{props.title}</p>
           <Icon
             name="cuida:caret-right-outline"
@@ -82,7 +83,7 @@ const { time, wordCount } = props.readingMetadata;
           <li class="data space-x-2">
             <PostCardInfoIcon name="cuida:calendar-outline" />
             <span class="select-none">
-              {formatDate(props.published, YukinaConfig.locale)}
+              {formatDate(props.published, SdepMoneConfig.locale)}
             </span>
           </li>
           {
@@ -90,7 +91,7 @@ const { time, wordCount } = props.readingMetadata;
               <li class="data space-x-1.5">
                 <PostCardInfoIcon name="dashicons:category" />
                 <a
-                  class="select-none rounded-md px-1.5 py-0.5 text-[var(--text-color-lighten)] transition-all hover:bg-[var(--primary-color-lighten)] hover:text-[var(--primary-color)]"
+                  class="rounded-md px-1.5 py-0.5 text-[var(--text-color-lighten)] transition-all select-none hover:bg-[var(--primary-color-lighten)] hover:text-[var(--primary-color)]"
                   href={`/categories/${IdToSlug(props.category)}`}
                 >
                   {props.category}
@@ -107,7 +108,7 @@ const { time, wordCount } = props.readingMetadata;
                   <PostCardInfoIcon name="mdi:tag-outline" />
                   <ul class="flex flex-row items-center space-x-1">
                     {props.tags.slice(0, 3).map((tag, index) => (
-                      <li class="flex select-none flex-row items-center text-[var(--text-color-lighten)]">
+                      <li class="flex flex-row items-center text-[var(--text-color-lighten)] select-none">
                         {index > 0 && <span class="pr-1">/</span>}
                         <a
                           class="rounded-md px-1.5 py-0.5 transition-all hover:bg-[var(--primary-color-lighten)] hover:text-[var(--primary-color)]"
@@ -147,7 +148,7 @@ const { time, wordCount } = props.readingMetadata;
       <a href={contentUrl} class="cover-wrapper">
         <Icon class="right-icon" name="cuida:caret-right-outline" size={96} />
         <img
-          class="lozad h-[212px] w-[404px] select-none rounded-r-3xl object-cover dark:brightness-90"
+          class="lozad h-[212px] w-[404px] rounded-r-3xl object-cover select-none dark:brightness-90"
           data-src={props.image ?? GetCoverURLForUnspecifiedEntry(entryID)}
           alt="PostCover"
         />

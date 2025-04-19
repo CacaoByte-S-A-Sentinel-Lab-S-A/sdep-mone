@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.main-container {
+  @apply w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+  @apply md:mx-auto;
+}
+
+.side-bar {
+  @apply hidden min-w-[248px] xl:block;
+}
+
+.content {
+  @apply xl:w-[calc(var(--page-width-xl)-264px)];
+}

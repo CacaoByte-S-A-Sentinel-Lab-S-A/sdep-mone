@@ -1,14 +1,15 @@
 import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
-const YukinaConfig: Configuration = {
+const SdepMoneConfig: Configuration = {
   title: "SdepMone",
   subTitle: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
   brandTitle: "SdepMone",
+  logoUrl: "/logo.svg",
 
   description: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
 
-  site: "https://yukina-blog.vercel.app",
+  site: "https://sdep-mone.vercel.app",
 
   locale: "es", // set for website language and date format
 
@@ -69,4 +70,4 @@ const YukinaConfig: Configuration = {
   bannerStyle: "LOOP", // 'loop' | 'static' | 'hidden'
 };
 
-export default YukinaConfig;
+export default SdepMoneConfig;

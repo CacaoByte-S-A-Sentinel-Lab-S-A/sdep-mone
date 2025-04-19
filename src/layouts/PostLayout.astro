@@ -31,10 +31,10 @@ const {
   <!-- <Fragment set:html={tocHTMLString} /> -->
   <div class="article-wrapper">
     <div class="article">
-      <!-- <Markdown>
+      <Markdown>
         <slot />
-      </Markdown> -->
-      <!-- {
+      </Markdown>
+      {
         published && title && (
           <CopyRight
             title={title}
@@ -44,12 +44,12 @@ const {
             sourceLink={sourceLink}
           />
         )
-      } -->
+      }
     </div>
   </div>
 </Main>
-
-<!-- <style>
+<!-- 
+<style>
   .article-wrapper {
     @apply mx-3 rounded-2xl bg-[var(--card-color)] px-5 py-6 lg:mx-0 lg:px-10 lg:py-9;
   }

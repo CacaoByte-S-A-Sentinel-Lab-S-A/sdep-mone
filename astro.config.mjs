@@ -13,13 +13,13 @@ import rehypeSlug from "rehype-slug";
 import remarkMath from "remark-math";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
-import YukinaConfig from "./app.config";
+import SdepMoneConfig from "./app.config";
 
 import pagefind from "astro-pagefind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: YukinaConfig.site,
+  site: SdepMoneConfig.site,
 
   integrations: [
     svelte(),
