@@ -3,8 +3,13 @@ import type { Configuration } from "./src/types/config";
 
 const SdepMoneConfig: Configuration = {
   title: "SdepMone",
+  appTitle: {
+    sdep: "Sdep",
+    mone: "Mone",
+  },
   subTitle: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
   brandTitle: "SdepMone",
+  
   logoUrl: "/logo.svg",
 
   description: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
@@ -47,17 +52,30 @@ const SdepMoneConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
-    "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg",
-    "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg",
-    "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg",
-    "https://cdn1.epicgames.com/spt-assets/6f3979ff608f42e286c83507a69b27f5/honkai-star-rail-158c1.jpg",
-    "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg",
-    "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
-    "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
-    "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg",
-    "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg",
+    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg", // Free Fire
+    "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg", // Genshin Impact
+    "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg", // Mobile Legends
+    "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg", // Honor of Kings
+    "https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart", // Honkai Star Rail
+    "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg", // Blood Strike
+    "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg", // Zenless Zone Zero
+    "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg", // Arena Breakout
+    "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg", // Farlight 84
+    "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg", // PUBG Mobile
   ],
+
+  gameBanner: {
+    "free-fire": "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
+    "genshin-impact": "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg",
+    "mobile-legends": "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg",
+    "honor-of-kings": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg",
+    "honkai-star-rail": "https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart",
+    "blood-strike": "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg",
+    "zenless-zone-zero": "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
+    "arena-breakout": "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
+    "farlight-84": "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg",
+    "pubg": "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg",
+  },
 
   slugMode: "HASH", // 'RAW' | 'HASH'
 

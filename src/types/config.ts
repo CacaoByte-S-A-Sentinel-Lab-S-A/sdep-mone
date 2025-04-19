@@ -1,7 +1,13 @@
 import type I18nKeys from "../locales/keys";
 
+type GameBanner = Record<string, string>;
+
 interface Configuration {
   title: string;
+  appTitle: {
+    sdep: string;
+    mone: string;
+  };
   subTitle: string;
   brandTitle: string;
   logoUrl: string;
@@ -26,6 +32,8 @@ interface Configuration {
   maxFooterTagChip: number;
 
   banners: string[];
+
+  gameBanner: GameBanner;
 
   slugMode: "HASH" | "RAW";
 

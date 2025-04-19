@@ -1,0 +1,31 @@
+---
+import SdepMoneConfig from "app.config";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+  const games = Object.keys(SdepMoneConfig.gameBanner);
+
+  return games.map((game) => ({
+    params: { game },
+    props: { game },
+  }));
+}
+
+const { game } = Astro.props;
+const bannerImage = SdepMoneConfig.gameBanner[game];
+---
+
+<MainLayout title={game} subTitle={game} bannerImage={bannerImage}>
+  <div class="archives">
+    <div class="article-wrapper">
+      <div class="article">
+        <h1 class="text-4xl font-bold text-[var(--primary-color)]">
+          Juego: {game}
+        </h1>
+        <p class="mt-4 text-lg text-[var(--text-color-lighten)]">
+          Esta es la página dedicada al juego <strong>{game}</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

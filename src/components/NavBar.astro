@@ -43,11 +43,17 @@ const navCount = SdepMoneConfig.navigators.length;
     <a class="brand-lg" href="/">
       <div class="title-navbar">
         <img
-        class="lozad left-0 top-0 h-10 rounded-l-3xl mr-2"
-        data-src={SdepMoneConfig.logoUrl}
-        alt="Logo"
-      />
-        <p>{SdepMoneConfig.brandTitle}</p>
+          class="lozad top-0 left-0 mr-2 h-10 rounded-l-3xl"
+          data-src={SdepMoneConfig.logoUrl}
+          alt="Logo"
+        />
+        <p>
+          <span class="text-primary font-bold"
+            >{SdepMoneConfig.appTitle.sdep}</span
+          ><span class="text-[var(--text-color-lighten)] font-bold"
+            >{SdepMoneConfig.appTitle.mone}</span
+          >
+        </p>
       </div>
     </a>
 

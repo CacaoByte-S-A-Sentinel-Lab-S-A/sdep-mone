@@ -15,13 +15,13 @@
 }
 
 .brand>.title-navbar {
-  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 truncate rounded-lg px-4 py-2 text-2xl font-medium text-[var(--primary-color)] transition-all;
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 truncate rounded-lg px-4 py-2 text-2xl font-medium transition-all;
   @apply hover:bg-[var(--primary-color-hover)];
   font-family: var(--brand-font);
 }
 
 .brand button {
-  @apply mr-2 flex h-[44px] w-[44px] flex-row items-center rounded-lg text-[var(--text-color)] transition-all;
+  @apply mr-2 flex h-[44px] w-[44px] flex-row items-center rounded-lg transition-all;
   @apply hover:bg-[var(--primary-color-hover)] hover:text-[var(--primary-color)];
 }
 
@@ -37,7 +37,7 @@
 }
 
 .brand-lg>.title-navbar {
-  @apply flex h-full flex-row content-center items-center text-2xl text-[var(--primary-color)];
+  @apply flex h-full flex-row content-center items-center text-2xl;
   font-family: var(--brand-font);
 }
 

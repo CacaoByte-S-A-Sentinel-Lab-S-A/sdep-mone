@@ -86,9 +86,10 @@
   --sidebar-border: hsl(32, 100%, 90%);
   --sidebar-ring: hsl(32, 100%, 70%);
 
+  
   /* base app */
-  --hue: 300;
-
+  --hue: 45;
+  
   --primary-color: oklch(70% 0.15 var(--hue));
   --primary-color-lighten: oklch(95% 0.02 var(--hue));
   --primary-color-hover: oklch(90% 0.025 var(--hue));
@@ -216,4 +217,30 @@
 .button-selected span {
   @apply w-full text-center text-[var(--card-color)];
   @apply dark:text-white/75;
+}
+
+.article-wrapper {
+  @apply mx-3 rounded-2xl bg-[var(--card-color)] px-5 py-6 lg:mx-0 lg:px-10 lg:py-9;
+}
+
+.article {
+  @apply flex flex-col;
+  font-size: var(--primary-font);
+}
+
+.archives {
+  @apply mx-3 flex flex-col rounded-2xl bg-[var(--card-color)] px-10 py-5 lg:mx-0 lg:p-10;
+}
+
+.main-container {
+  @apply relative bg-[var(--background-color)] z-50 w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+  @apply md:mx-auto;
+}
+
+.side-bar {
+  @apply hidden min-w-[248px] xl:block;
+}
+
+.content {
+  @apply xl:w-[calc(var(--page-width-xl)-264px)];
 }
