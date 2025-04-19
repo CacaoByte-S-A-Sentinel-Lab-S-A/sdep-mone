@@ -2,7 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 
 export async function getStaticPaths() {
-  const games = ["free-fire", "valorant", "fortnite", "apex-legends", "call-of-duty"];
+  const games = ["free-fire", "mobile-legends", "honor-kings"];
   const ids = Array.from({ length: 10 }, (_, i) => (i + 1).toString());
 
   return games.flatMap((game) =>

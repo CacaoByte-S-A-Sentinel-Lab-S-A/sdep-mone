@@ -6,6 +6,8 @@ tags: [Cupones, Skins]
 category: 	MOBA
 draft: false
 cover: https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/06/honor-kings-3550291.jpg?tf=3840x
+gameSlug: honor-kings
+gameId: 1  
 ---
 
 Honor of Kings es uno de los MOBAs más exitosos del mundo. Aquí puedes adquirir skins épicas y usar cupones para mejorar tu progreso.

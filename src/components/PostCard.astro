@@ -17,11 +17,14 @@ export interface Props {
   description?: string;
   image?: string;
   readingMetadata: { time: number; wordCount: number };
+  gameSlug?: string;   
+  gameId?: string; 
 }
 
 const props = Astro.props;
 const entryID = IdToSlug(props.id);
-const contentUrl = `/posts/${entryID}`;
+const contentUrl = `/games/${props.gameSlug}/${props.gameId}`;
+
 const { time, wordCount } = props.readingMetadata;
 ---
 
