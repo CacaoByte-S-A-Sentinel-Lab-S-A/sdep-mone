@@ -216,15 +216,15 @@
 .cover .item {
   @apply h-full w-full object-cover;
 }
-
+/* 
 .title {
   @apply mt-8 text-center font-bold text-[var(--title-color)] drop-shadow-lg lg:mt-1;
   font-family: var(--title-font);
-}
+} */
 
-.title-index {
+/* .title-index {
   @apply mb-0 text-6xl leading-[5rem] lg:mb-1 lg:text-8xl;
-}
+} */
 
 .title-normal {
   @apply mb-1 text-3xl lg:text-5xl;

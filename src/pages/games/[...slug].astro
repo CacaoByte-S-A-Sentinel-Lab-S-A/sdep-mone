@@ -2,22 +2,25 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 
 export async function getStaticPaths() {
-  const games = ["zelda", "mario", "kirby"];
+  const games = ["free-fire", "valorant", "fortnite", "apex-legends", "call-of-duty"];
+  const ids = Array.from({ length: 10 }, (_, i) => (i + 1).toString());
 
-  return games.map((slug) => ({
-    params: { slug },
-    props: { slug },
-  }));
+  return games.flatMap((game) =>
+    ids.map((id) => ({
+      params: { slug: `${game}/${id}` },
+      props: { game, id },
+    }))
+  );
 }
 
-const { slug } = Astro.props;
+const { game, id } = Astro.props;
 ---
 
-<MainLayout title={slug} subTitle={`Información sobre ${slug}`} slug={slug}>
+<MainLayout title={game} subTitle={`ID: ${id}`} slug={game}>
   <h1 class="text-4xl font-bold text-[var(--primary-color)]">
-    Juego: {slug}
+    Juego: {game}
   </h1>
   <p class="mt-4 text-lg text-[var(--text-color-lighten)]">
-    Esta es la página dedicada al juego <strong>{slug}</strong>.
+    Esta es la página dedicada al juego <strong>{game}</strong> con ID <strong>{id}</strong>.
   </p>
 </MainLayout>

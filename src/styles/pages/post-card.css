@@ -20,8 +20,8 @@
 }
 
 .reading-time {
-  /* @apply space-x-3 align-middle text-sm text-[var(--text-color-lighten)];
-  font-family: var(--primary-font); */
+  @apply space-x-3 align-middle text-sm text-[var(--text-color-lighten)];
+  font-family: var(--primary-font);
 }
 
 .cover-container {

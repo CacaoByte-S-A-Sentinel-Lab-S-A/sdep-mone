@@ -41,27 +41,4 @@ const { id, title, pubilished } = Astro.props;
       </p>
     </div>
   </a>
-
-  <style>
-    .date {
-      font-family: var(--primary-font);
-    }
-
-    .title {
-      font-family: var(--primary-font);
-    }
-
-    .item:hover .title {
-      @apply pl-2 text-[var(--primary-color)];
-    }
-
-    .dash-line::before {
-      @apply absolute top-1/2 h-[40px] w-[10%] -translate-y-1/2 border-l-2 border-dashed border-l-[var(--text-color)] opacity-25 content-[''];
-      left: calc(50% - 1px);
-    }
-
-    .item:hover .item-dot {
-      @apply h-4 bg-[var(--primary-color)] outline-[var(--primary-color-lighten)];
-    }
-  </style>
 </div>
