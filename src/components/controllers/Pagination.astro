@@ -10,7 +10,7 @@ export interface Props {
 
 const props = Astro.props;
 
-const maxVisiblePages = 4;
+const maxVisiblePages = 5;
 let pages: (string | number)[] = [];
 
 if (props.lastPage <= maxVisiblePages) {
