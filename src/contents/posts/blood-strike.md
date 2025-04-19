@@ -6,6 +6,8 @@ tags: [Créditos, Recompensas]
 category: Shooter Battle Royale
 draft: false
 cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMG3ANtJuJQ9H4w6UtM9Q4NhDNhJ-nMOJumQ&s
+gameSlug: blood-strike
+gameId: 1 
 ---
 
 Blood Strike es un battle royale intenso con recompensas diarias y eventos especiales. Aquí puedes obtener créditos para personalizar tu experiencia.

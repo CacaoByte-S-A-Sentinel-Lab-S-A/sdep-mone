@@ -6,6 +6,8 @@ tags: [Créditos, Equipamiento]
 category: Shooter Táctico
 draft: false
 cover: https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg
+gameSlug: arena-breakout 
+gameId: 1 
 ---
 
 Arena Breakout es un shooter táctico donde cada misión importa. Aumenta tu inventario y equípate con los mejores ítems usando créditos.

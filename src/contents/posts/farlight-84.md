@@ -6,7 +6,7 @@ tags: [Oro, Pase de Batalla]
 category: Shooter Futurista
 draft: false
 cover: https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg
-gameSlug: free-fire 
+gameSlug: farlight
 gameId: 1  
 ---
 
