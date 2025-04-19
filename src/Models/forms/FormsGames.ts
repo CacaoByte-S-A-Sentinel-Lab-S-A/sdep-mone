@@ -44,11 +44,11 @@ export const FormsGames = [
     },
     {
       "checked": true,
-      "description": "Región o servidor al que pertenece la cuenta ",
+      "description": "Region o servidor al que pertenece la cuenta ",
       "disabled": false,
       "label": "Región o servidor",
       "name": "name_5232852522",
-      "placeholder": "Región o servidor al que pertenece la cuenta ",
+      "placeholder": "Region o servidor al que pertenece la cuenta ",
       "required": true,
       "rowIndex": 0,
       "type": "text",
@@ -58,15 +58,17 @@ export const FormsGames = [
     },
     {
       "checked": true,
-      "description": "Acepto los terminos y condiciones correspondientes a la información",
+      "description": "Acepto los terminos y condiciones correspondientes a los datos solicitados",
       "disabled": false,
-      "label": "Acepto que la información introducida en este formulario es la correcta correspondiente a como se solicita",
+      "label": "Acepto que los datos introducidos en este formulario es la correcta correspondiente a como se solicita",
       "name": "name_1930221828",
-      "placeholder": "Acepto que la información introducida en este formulario es la correcta correspondiente a como se solicita.",
+      "placeholder": "Acepto que los datos introducidos en este formulario es la correcta correspondiente a como se solicita.",
       "required": true,
       "rowIndex": 0,
       "type": "",
       "value": "",
       "variant": "Checkbox"
-    }
+    }    
   ]
+
+  

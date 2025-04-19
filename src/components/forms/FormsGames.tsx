@@ -20,25 +20,36 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 import { FormsGames } from "@/Models/forms/FormsGames";
 
-// 1. Definimos el esquema (manual aún)
+// Definimos el esquema
 const formSchema = z.object({
-  name_1110064419: z.string().min(2).max(20),
-  name_2435070634: z.coerce.number().min(1),
+  name_1110064419: z.string().min(2).max(20),  // Juego
+  name_2435070634: z.coerce.number().min(1),   // Monedas
   name_9680451077: z.string().min(1),
   name_5232852522: z.string().min(0),
   name_1930221828: z.boolean(),
 });
 
-// 2. Tipo de campos válidos
 type FormFields = keyof z.infer<typeof formSchema>;
 
-export default function MyForm() {
+// 🛠 Ahora tu formulario recibe dos props
+interface MyFormProps {
+  gameName: string;
+  coinAmount: number;
+}
+
+export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: FormsGames.reduce((acc, field) => {
-      acc[field.name as FormFields] = field.variant === "Checkbox" ? false : "";
+      if (field.name === "name_1110064419") {
+        acc[field.name as FormFields] = gameName;
+      } else if (field.name === "name_2435070634") {
+        acc[field.name as FormFields] = coinAmount;
+      } else {
+        acc[field.name as FormFields] = field.variant === "Checkbox" ? false : "";
+      }
       return acc;
-    }, {} as any),
+    }, {} as any),    
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -63,7 +74,7 @@ export default function MyForm() {
           <FormField
             key={field.name}
             control={form.control}
-            name={field.name as FormFields} 
+            name={field.name as FormFields}
             render={({ field: innerField }) => (
               <FormItem
                 className={field.variant === "Checkbox" ? "flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4" : ""}
@@ -74,14 +85,17 @@ export default function MyForm() {
                       type={field.type || "text"}
                       placeholder={field.placeholder}
                       {...innerField}
-                      value={innerField.value as string | number | undefined} // <- aquí casteamos
+                      value={innerField.value as string | number | undefined}
                       onChange={innerField.onChange}
+                      readOnly={
+                        field.name === "name_1110064419" || field.name === "name_2435070634"
+                      } // <- Bloquear solo juego y monedas
                     />
                   ) : field.variant === "Checkbox" ? (
                     <Checkbox
-                      checked={!!innerField.value} // <- forzamos a booleano
-                      onCheckedChange={innerField.onChange}
-                    />
+                    checked={innerField.value === true}
+                    onCheckedChange={(checked) => innerField.onChange(checked)}
+                  />                                 
                   ) : null}
                 </FormControl>
 
