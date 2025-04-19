@@ -24,7 +24,7 @@ export interface Props {
 
 const props = Astro.props;
 const entryID = IdToSlug(props.id);
-const contentUrl = `/games/${props.gameSlug}/${props.gameId}`;
+const contentUrl = `/games/${props.gameSlug}`;
 
 const { time, wordCount } = props.readingMetadata;
 
