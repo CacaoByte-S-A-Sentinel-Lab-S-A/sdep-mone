@@ -22,19 +22,19 @@ import { FormsGames } from "@/Models/forms/FormsGames";
 
 // Definimos el esquema
 const formSchema = z.object({
-  name_1110064419: z.string().min(2).max(20),  // Juego
-  name_2435070634: z.coerce.number().min(1),   // Monedas
+  name_1110064419: z.string().min(2).max(20), // Juego
+  name_2435070634: z.string().min(1),         
   name_9680451077: z.string().min(1),
   name_5232852522: z.string().min(0),
   name_1930221828: z.boolean(),
 });
 
+
 type FormFields = keyof z.infer<typeof formSchema>;
 
-// 🛠 Ahora tu formulario recibe dos props
 interface MyFormProps {
   gameName: string;
-  coinAmount: number;
+  coinAmount: string;
 }
 
 export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps) {
@@ -44,16 +44,21 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       if (field.name === "name_1110064419") {
         acc[field.name as FormFields] = gameName;
       } else if (field.name === "name_2435070634") {
-        acc[field.name as FormFields] = coinAmount;
+        acc[field.name as FormFields] = coinAmount.toString(); 
       } else {
         acc[field.name as FormFields] = field.variant === "Checkbox" ? false : "";
       }
       return acc;
-    }, {} as any),    
+    }, {} as any),          
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
+      if (!values.name_1930221828) {
+        toast.error("Debes aceptar los términos y condiciones antes de enviar el formulario.");
+        return; 
+      }
+  
       const juego = values.name_1110064419;
       const monedas = values.name_2435070634;
       const idCuenta = values.name_9680451077;
@@ -65,8 +70,7 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   
       window.open(url, "_blank"); 
-  
-      console.log(values); 
+      console.log(values);
     } catch (error) {
       console.error("Form submission error", error);
       toast.error("Failed to submit the form. Please try again.");
@@ -97,7 +101,7 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
                       onChange={innerField.onChange}
                       readOnly={
                         field.name === "name_1110064419" || field.name === "name_2435070634"
-                      } // <- Bloquear solo juego y monedas
+                      } 
                     />
                   ) : field.variant === "Checkbox" ? (
                     <Checkbox
@@ -111,7 +115,6 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
                   <FormLabel>{field.label}</FormLabel>
                   <FormDescription>{field.description}</FormDescription>
                 </div>
-
                 <FormMessage />
               </FormItem>
             )}

@@ -12,7 +12,7 @@ const { game, id } = Astro.params;
 
 <FormsGamesWhatsApp 
   gameName={game ?? ""} 
-  coinAmount={Number(id)} 
+  coinAmount={id ?? ""} 
   client:load 
 />
 
