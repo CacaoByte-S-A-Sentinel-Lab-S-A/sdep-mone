@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.props;
 ---
 
-<MainLayout title={slug} subTitle={`Información sobre ${slug}`} slug={slug}>
+<MainLayout title={slug} subTitle={`Información sobre ${slug}`} slug={'1'}>
   <h1 class="text-4xl font-bold text-[var(--primary-color)]">
     Juego: {slug}
   </h1>
