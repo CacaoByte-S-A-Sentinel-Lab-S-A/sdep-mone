@@ -22,7 +22,7 @@ export interface Props {
   gameId?: string; 
 }
 
-const props = Astro.props;
+const props = Astro.props  ?? {};
 const entryID = IdToSlug(props.id);
 const contentUrl = `/games/${props.gameSlug}`;
 

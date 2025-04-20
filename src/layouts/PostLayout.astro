@@ -24,7 +24,7 @@ const {
   license,
   author,
   sourceLink,
-} = Astro.props;
+} = Astro.props ?? {};
 ---
 
 <Main title={title} subTitle={subTitle} bannerImage={bannerImage}>
