@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import vercel from '@astrojs/vercel/serverless';
 
 import react from '@astrojs/react';
 import sitemap from "@astrojs/sitemap";
@@ -20,6 +21,8 @@ import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
   site: SdepMoneConfig.site,
+  output: 'server', // 'static' | 'server' | 'hybrid'
+  adapter: vercel(),
 
   integrations: [
     svelte(),
