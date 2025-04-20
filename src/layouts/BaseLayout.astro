@@ -1,17 +1,11 @@
 ---
-import YukinaConfig from "../../yukina.config";
+import SdepMoneConfig from "../../app.config";
 import BaseHead from "../components/BaseHead.astro";
 ---
 
-<html lang={YukinaConfig.locale}>
+<html lang={SdepMoneConfig.locale}>
   <BaseHead />
   <body class="overflow-y-hidden">
     <slot />
   </body>
 </html>
-
-<style>
-  body {
-    @apply bg-[var(--background-color)];
-  }
-</style>

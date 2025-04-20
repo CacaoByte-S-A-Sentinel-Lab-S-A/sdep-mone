@@ -1,0 +1,45 @@
+/* PostArchiveLayout */
+.archives {
+  @apply mx-3 flex flex-col rounded-2xl bg-[var(--card-color)] px-10 py-5 lg:mx-0 lg:p-10;
+}
+
+/* ArchiveYearTitle */
+.year {
+  font-family: var(--primary-font);
+}
+
+.count {
+  font-family: var(--primary-font);
+}
+
+.dash-line::before {
+  @apply absolute top-1/2 h-[24px] w-[10%] border-l-2 border-dashed border-l-[var(--text-color)] opacity-25 content-[''];
+  left: calc(50% - 1px);
+}
+
+/* ArchivePost */
+.date {
+  font-family: var(--primary-font);
+}
+
+.title {
+  font-family: var(--primary-font);
+}
+
+.item:hover .title {
+  @apply pl-2 text-[var(--primary-color)];
+}
+
+.dash-line::before {
+  @apply absolute top-1/2 h-[40px] w-[10%] -translate-y-1/2 border-l-2 border-dashed border-l-[var(--text-color)] opacity-25 content-[''];
+  left: calc(50% - 1px);
+}
+
+.item:hover .item-dot {
+  @apply h-4 bg-[var(--primary-color)] outline-[var(--primary-color-lighten)];
+}
+
+/* ChipLayout */
+.chip:hover .chip-name {
+  @apply pl-2 text-[var(--primary-color)];
+}

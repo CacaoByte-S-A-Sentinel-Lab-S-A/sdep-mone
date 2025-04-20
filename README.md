@@ -1,4 +1,4 @@
-# Yukina
+# SdepMone
 
 Simple and Elegant Astro Blog Template
 

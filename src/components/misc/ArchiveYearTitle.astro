@@ -28,17 +28,3 @@ const { year, count } = Astro.props;
     </p>
   </div>
 </div>
-<style>
-  .year {
-    font-family: var(--primary-font);
-  }
-
-  .count {
-    font-family: var(--primary-font);
-  }
-
-  .dash-line::before {
-    @apply absolute top-1/2 h-[24px] w-[10%] border-l-2 border-dashed border-l-[var(--text-color)] opacity-25 content-[''];
-    left: calc(50% - 1px);
-  }
-</style>
