@@ -15,7 +15,7 @@ export interface Props {
   slug?: string;
 }
 
-const props = Astro.props;
+const props = Astro.props ?? {};
 ---
 
 <Base>

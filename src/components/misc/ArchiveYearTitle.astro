@@ -7,7 +7,7 @@ export interface Props {
   count: number;
 }
 
-const { year, count } = Astro.props;
+const { year, count } = Astro.props ?? {};
 ---
 
 <div class="mb-2 flex w-full flex-row items-center">

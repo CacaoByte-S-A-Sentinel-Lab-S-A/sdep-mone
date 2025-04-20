@@ -16,7 +16,7 @@ export interface Props {
   author?: string;
 }
 
-const { title, published, license, author, sourceLink } = Astro.props;
+const { title, published, license, author, sourceLink } = Astro.props ?? {};
 ---
 
 <div
