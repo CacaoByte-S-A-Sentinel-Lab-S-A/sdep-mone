@@ -17,7 +17,7 @@ export interface Props {
 
 
 
-const { archiveMap, title, subTitle, bannerImage, slug } = Astro.props;
+const { archiveMap, title, subTitle, bannerImage, slug } = Astro.props ?? {};
 ---
 
 <Main title={title} subTitle={subTitle} bannerImage={bannerImage} slug={slug}>

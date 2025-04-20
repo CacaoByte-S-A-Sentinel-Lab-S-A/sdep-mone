@@ -9,7 +9,7 @@ export interface Props {
   tags: string[] | undefined;
 }
 
-const { id, title, pubilished } = Astro.props;
+const { id, title, pubilished } = Astro.props ?? {};
 ---
 
 <div class="item">

@@ -8,7 +8,7 @@ export interface Props {
   class?: string;
 }
 
-const props = Astro.props;
+const props = Astro.props ?? {};
 
 const maxVisiblePages = 5;
 let pages: (string | number)[] = [];
