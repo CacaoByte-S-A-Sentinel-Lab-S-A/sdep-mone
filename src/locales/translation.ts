@@ -1,6 +1,6 @@
-import YukinaConfig from "../../yukina.config";
+import SdepMoneConfig from "../../app.config";
 import type I18nKeys from "./keys";
-import { en } from "./languages/en";
+import { es } from "./languages/es";
 import { zh_CN } from "./languages/zh_cn";
 
 export type Translation = {
@@ -8,16 +8,16 @@ export type Translation = {
 };
 
 const map: { [key: string]: Translation } = {
-  en: en,
+  es: es,
   "zh-cn": zh_CN,
 };
 
 export function getTranslation(lang: string): Translation {
-  return map[lang.toLowerCase()] || en;
+  return map[lang.toLowerCase()] || es;
 }
 
 export function i18n(key: I18nKeys, ...interpolations: string[]): string {
-  const lang = YukinaConfig.locale;
+  const lang = SdepMoneConfig.locale;
   let translation = getTranslation(lang)[key];
   interpolations.forEach((interpolation) => {
     translation = translation.replace("{{}}", interpolation);

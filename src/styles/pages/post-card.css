@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.title-post {
+  @apply flex w-full flex-row items-center space-x-1 align-top text-xl font-semibold text-[var(--text-color)] lg:text-2xl;
+  @apply transition-all hover:text-[var(--primary-color)];
+  font-family: var(--primary-font);
+}
+
+.data {
+  font-family: var(--primary-font);
+  @apply flex flex-row items-center;
+}
+
+.data > span {
+  @apply inline-block self-center truncate align-middle text-[var(--text-color-lighten)];
+  font-family: var(--primary-font);
+}
+
+.desc {
+  @apply line-clamp-1 text-[var(--text-color)];
+  font-family: var(--primary-font);
+}
+
+.reading-time {
+  @apply space-x-3 align-middle text-sm text-[var(--text-color-lighten)];
+  font-family: var(--primary-font);
+}
+
+.cover-container {
+  @apply relative ml-2 hidden h-[212px] min-w-[404px] max-w-[404px] select-none lg:block;
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.cover-wrapper {
+  @apply h-full w-full select-none overflow-hidden rounded-r-3xl;
+}
+
+.cover-wrapper::before {
+  @apply absolute left-0 h-full w-0 select-none rounded-r-3xl bg-black opacity-50;
+  content: "";
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.cover-wrapper::before:hover {
+  @apply h-full w-full select-none;
+}
+
+.right-icon {
+  @apply absolute left-1/2 top-1/2 z-[10] -translate-x-1/2 -translate-y-1/2 text-white;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all 0.3s;
+}
+
+.cover-wrapper:hover .right-icon {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}

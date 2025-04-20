@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+.banner {
+  @apply relative h-[calc(var(--banner-height)*3/4)] opacity-100 lg:h-[var(--banner-height)];
+}
+
+.carousel {
+  @apply absolute left-0 top-0 -z-10 block h-[calc(var(--banner-height)*3/4)] w-full overflow-hidden bg-white lg:h-[var(--banner-height)];
+  animation-fill-mode: forwards;
+}
+
+.carousel::before {
+  @apply absolute left-0 top-0 z-10 block h-full w-full bg-black/25 transition-all content-[''];
+  @apply dark:bg-black/30;
+}
+
+.carousel .item {
+  @apply absolute left-0 top-0 z-0 h-full w-full origin-center bg-cover bg-center bg-no-repeat opacity-0;
+}
+
+.cover {
+  @apply absolute left-0 top-0 z-0 block h-[var(--banner-height)] w-full overflow-hidden bg-white;
+}
+
+.cover::before {
+  @apply absolute left-0 top-0 z-10 block h-full w-full bg-black/25 transition-all content-[''];
+  @apply dark:bg-black/30;
+}
+
+.cover .item {
+  @apply h-full w-full object-cover;
+}
+
+.title {
+  @apply mt-8 text-center font-bold text-[var(--title-color)] drop-shadow-lg lg:mt-1;
+  font-family: var(--title-font);
+}
+
+.title-index {
+  @apply mb-0 text-4xl leading-[5rem] lg:mb-1 lg:text-6xl;
+}
+
+.title-normal {
+  @apply mb-1 text-3xl lg:text-5xl;
+}
+
+.subtitle {
+  @apply text-center text-xl text-[var(--subtitle-color)] drop-shadow-md lg:text-3xl;
+  font-family: var(--subtitle-font);
+}
+
+.waves {
+  @apply absolute -bottom-[1px] h-[10vh] max-h-[9.375rem] min-h-[3.125rem] w-full;
+  @apply md:h-[15vh];
+}
+
+.waves > .parallax use {
+  @apply fill-[var(--background-color)];
+  animation: wave 25s cubic-bezier(0.5, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes banner-onload-animation {
+  0% {
+    opacity: 0;
+    height: calc(var(--banner-height) + 4rem);
+  }
+  100% {
+    opacity: 1;
+    height: var(--banner-height);
+  }
+}
