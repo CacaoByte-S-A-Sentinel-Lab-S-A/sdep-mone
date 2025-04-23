@@ -9,6 +9,13 @@ export interface Archive {
   id: string;
   date: Date;
   tags?: string[];
+  category?: string;           
+  description?: string;        
+  cover?: string;              
+  readingMetadata?: {
+    time: number;
+    wordCount: number;
+  };
   gameSlug?: string;
   gameId?: string;
 }
@@ -118,6 +125,10 @@ export async function GetArchives() {
 
     const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
     const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+    const readingMetadata = post.rendered?.metadata?.frontmatter?.readingMetadata ?? {
+      time: 0,
+      wordCount: 0,
+    }; // Valor seguro por si no existe
 
     if (!archives.has(year)) {
       archives.set(year, []);
@@ -130,6 +141,10 @@ export async function GetArchives() {
         : `/posts/${IdToSlug(post.id)}`,
       date: date,
       tags: post.data.tags,
+      category: post.data.category,
+      description: post.data.description,
+      cover: post.data.cover,
+      readingMetadata: readingMetadata,
       gameSlug: gameSlug,
       gameId: gameId,
     });
@@ -203,6 +218,10 @@ export async function GetCategories() {
 
     const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
     const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+    const readingMetadata = post.rendered?.metadata?.frontmatter?.readingMetadata ?? {
+      time: 0,
+      wordCount: 0,
+    }; 
 
     if (!categories.has(categorySlug)) {
       categories.set(categorySlug, {
@@ -219,6 +238,10 @@ export async function GetCategories() {
         : `/posts/${IdToSlug(post.id)}`,
       date: new Date(post.data.published),
       tags: post.data.tags,
+      category: post.data.category,      
+      description: post.data.description, 
+      cover: post.data.cover,             
+      readingMetadata: readingMetadata,   
       gameSlug: gameSlug,
       gameId: gameId,
     });
@@ -226,3 +249,4 @@ export async function GetCategories() {
 
   return categories;
 }
+

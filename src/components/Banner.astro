@@ -9,7 +9,7 @@ export interface Props {
   bannerImage?: string;
   slug?: string;
 }
-const { title, subTitle, bannerImage, slug } = Astro.props;
+const { title, subTitle, bannerImage, slug } = Astro.props ?? {};
 
 const hasTitle = title !== undefined || subTitle !== undefined;
 const hasHeaderImg = bannerImage !== undefined || slug !== undefined;

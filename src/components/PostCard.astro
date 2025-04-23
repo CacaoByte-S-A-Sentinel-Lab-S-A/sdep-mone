@@ -22,7 +22,7 @@ export interface Props {
   gameId?: string; 
 }
 
-const props = Astro.props;
+const props = Astro.props  ?? {};
 const entryID = IdToSlug(props.id);
 const contentUrl = `/games/${props.gameSlug}`;
 
@@ -44,14 +44,14 @@ const { time, wordCount } = props.readingMetadata;
     />
     <div class="absolute bottom-2 w-full">
       <div class="mx-2 flex flex-row justify-between">
-        <div
+        <!-- <div
           class="flex flex-row items-center space-x-2 rounded-md bg-black/50 px-1.5 py-0.5 text-[var(--primary-color-lighten)] dark:text-[var(--text-color)]"
         >
           <Icon name="cuida:calendar-outline" />
           <span class="select-none">
             {formatDate(props.published, SdepMoneConfig.locale)}
           </span>
-        </div>
+        </div> -->
         {
           props.category && (
             <div class="flex flex-row items-center space-x-2 rounded-md bg-black/50 px-1.5 py-0.5 text-[var(--primary-color-lighten)] dark:text-[var(--text-color)]">
@@ -84,12 +84,12 @@ const { time, wordCount } = props.readingMetadata;
       </div>
       <div class="ml-2 hidden lg:block">
         <ul class="flex flex-row space-x-4">
-          <li class="data space-x-2">
+          <!-- <li class="data space-x-2">
             <PostCardInfoIcon name="cuida:calendar-outline" />
             <span class="select-none">
               {formatDate(props.published, SdepMoneConfig.locale)}
             </span>
-          </li>
+          </li> -->
           {
             props.category && (
               <li class="data space-x-1.5">

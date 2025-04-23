@@ -17,6 +17,8 @@ import SdepMoneConfig from "./app.config";
 
 import pagefind from "astro-pagefind";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
   site: SdepMoneConfig.site,
@@ -56,7 +58,10 @@ export default defineConfig({
       ],
     ],
   },
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: vercel(),
 });

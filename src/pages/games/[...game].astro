@@ -1,9 +1,7 @@
 ---
 import SdepMoneConfig from "app.config";
 import MainLayout from "../../layouts/MainLayout.astro";
-import GameStore from "@/components/game-store";
-
-export const prerender = false;
+import FormsGamesWhatsApp from "@/components/forms/FormsGames";
 
 export async function getStaticPaths() {
   const games = Object.keys(SdepMoneConfig.gameBanner);
@@ -14,10 +12,28 @@ export async function getStaticPaths() {
   }));
 }
 
-const { game } = Astro.props;
+const { game } = Astro.props ?? {};
+const id = "pase-elite"
 const bannerImage = SdepMoneConfig.gameBanner[game];
+
 ---
 
 <MainLayout title={game} subTitle={game} bannerImage={bannerImage}>
-  <GameStore game={'free-fire'} client:load />
+  <div class="archives">
+    <div class="article-wrapper">
+      <div class="article">
+        <h1 class="text-4xl font-bold text-[var(--primary-color)]">
+          Juego: {game}
+        </h1>
+        <p class="mt-4 text-lg text-[var(--text-color-lighten)]">
+          Esta es la página dedicada al juego <strong>{game}</strong>.
+        </p>
+      </div>
+    </div>
+    <FormsGamesWhatsApp 
+    gameName={game ?? ""} 
+    coinAmount={id ?? ""} 
+    client:load 
+  />
+  </div>
 </MainLayout>
