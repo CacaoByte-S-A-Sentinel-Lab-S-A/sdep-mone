@@ -78,7 +78,7 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00" }
     ]
   },
-  "honkai-star-rail": {
+  "honkai-start-rail": {
     cristales: [
       { amount: "60", price: "Q10.00" },
       { amount: "330", price: "Q51.00" },
