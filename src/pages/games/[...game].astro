@@ -1,6 +1,9 @@
 ---
 import SdepMoneConfig from "app.config";
 import MainLayout from "../../layouts/MainLayout.astro";
+import GameStore from "@/components/game-store";
+
+export const prerender = false;
 
 export async function getStaticPaths() {
   const games = Object.keys(SdepMoneConfig.gameBanner);
@@ -16,16 +19,11 @@ const bannerImage = SdepMoneConfig.gameBanner[game];
 ---
 
 <MainLayout title={game} subTitle={game} bannerImage={bannerImage}>
-  <div class="archives">
+  <!-- <div class="archives">
     <div class="article-wrapper">
-      <div class="article">
-        <h1 class="text-4xl font-bold text-[var(--primary-color)]">
-          Juego: {game}
-        </h1>
-        <p class="mt-4 text-lg text-[var(--text-color-lighten)]">
-          Esta es la página dedicada al juego <strong>{game}</strong>.
-        </p>
-      </div>
+      <div class="article"> -->
+  <GameStore client:load />
+  <!-- </div>
     </div>
-  </div>
+  </div> -->
 </MainLayout>

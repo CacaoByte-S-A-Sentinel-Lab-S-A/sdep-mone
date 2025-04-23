@@ -36,7 +36,13 @@ const navCount = SdepMoneConfig.navigators.length;
         />
       </button>
       <a class="title-navbar" href="/">
-        {SdepMoneConfig.brandTitle}
+        <p>
+          <span class="font-bold text-[var(--text-color)]"
+            >{SdepMoneConfig.appTitle.sdep}</span
+          ><span class="text-primary font-bold"
+            >{SdepMoneConfig.appTitle.mone}</span
+          >
+        </p>
       </a>
     </div>
     <!-- Desktop -->
@@ -48,9 +54,9 @@ const navCount = SdepMoneConfig.navigators.length;
           alt="Logo"
         />
         <p>
-          <span class="text-primary font-bold"
+          <span class="font-bold text-[var(--text-color)]"
             >{SdepMoneConfig.appTitle.sdep}</span
-          ><span class="text-[var(--text-color-lighten)] font-bold"
+          ><span class="text-primary font-bold"
             >{SdepMoneConfig.appTitle.mone}</span
           >
         </p>
@@ -195,7 +201,7 @@ const navCount = SdepMoneConfig.navigators.length;
   ) as any as SVGElement;
 
   // Record the current theme
-  let currentTheme = localStorage.getItem("theme") || "light";
+  let currentTheme = localStorage.getItem("theme") || "dark";
 
   // Set theme
   const setTheme = (theme: string) => {

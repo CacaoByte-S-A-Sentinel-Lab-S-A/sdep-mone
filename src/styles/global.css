@@ -107,7 +107,7 @@
   --page-width-lg: 992px;
   --page-width-xl: 1264px;
 
-  --banner-height: 55vh;
+  --banner-height: 65vh;
   --title-font: var(--brand-font);
   --title-color: oklch(100% 0 0 / 95%);
   --subtitle-font: var(--brand-font);
@@ -233,7 +233,7 @@
 }
 
 .main-container {
-  @apply relative bg-[var(--background-color)] z-50 w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+  @apply relative bg-[var(--background-color)] w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
   @apply md:mx-auto;
 }
 
