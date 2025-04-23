@@ -105,13 +105,13 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                     <CarouselNext className="right-0 bg-orange-500 hover:bg-orange-600 border-none text-white hover:text-white" />
                   </Carousel>
                   <div className="flex justify-center mt-4">
-                    <Button
+                    {/* <Button
                       className="bg-orange-600 hover:bg-orange-700 text-white border-none"
                       onClick={handleConfirm}
                       disabled={selectedCategoria !== categoria || selectedIndex === null}
                     >
                       Confirmar
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </AccordionContent>
@@ -120,12 +120,14 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
         </Accordion>
       </div>
     </div>
-    {confirmedProduct && (
-  <FormsGamesWhatsApp 
+    {selectedProduct && (
+  <FormsGamesWhatsApp
+    key={`${selectedProduct.title}-${selectedProduct.price}`} 
     gameName={game}
-    coinAmount={confirmedProduct.amount ?? confirmedProduct.title ?? ""}
+    coinAmount={selectedProduct.amount ?? selectedProduct.title ?? ""}
   />
 )}
+
     </div>
   )
 }
