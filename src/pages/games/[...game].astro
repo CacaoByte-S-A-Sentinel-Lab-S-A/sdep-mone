@@ -19,11 +19,5 @@ const bannerImage = SdepMoneConfig.gameBanner[game];
 ---
 
 <MainLayout title={game} subTitle={game} bannerImage={bannerImage}>
-  <!-- <div class="archives">
-    <div class="article-wrapper">
-      <div class="article"> -->
-  <GameStore client:load />
-  <!-- </div>
-    </div>
-  </div> -->
+  <GameStore game={'free-fire'} client:load />
 </MainLayout>
