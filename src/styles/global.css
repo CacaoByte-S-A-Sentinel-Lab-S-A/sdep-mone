@@ -233,7 +233,7 @@
 }
 
 .main-container {
-  @apply relative bg-[var(--background-color)] w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+  @apply relative bg-[var(--background-color)] w-full lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
   @apply md:mx-auto;
 }
 
