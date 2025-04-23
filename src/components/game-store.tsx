@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Diamond } from "lucide-react"
 import { cn } from "@/lib/utils"
+import FormsGamesWhatsApp from "@/components/forms/FormsGames";
 
 interface Producto {
   amount?: string
@@ -25,16 +26,25 @@ interface GameStoreProps {
 export default function GameStore({ game, gameData }: GameStoreProps) {
   const [selectedCategoria, setSelectedCategoria] = useState<string | null>(null)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
+  const [confirmedProduct, setConfirmedProduct] = useState<Producto | null>(null);
+
 
   const currentGame = gameData[game] || {}
+  const selectedProduct = selectedCategoria && selectedIndex !== null
+  ? currentGame[selectedCategoria]?.[selectedIndex]
+  : null;
+
 
   const handleConfirm = () => {
     if (selectedCategoria && selectedIndex !== null) {
-      console.log("Confirmando compra:", currentGame[selectedCategoria]?.[selectedIndex])
+      const producto = currentGame[selectedCategoria]?.[selectedIndex] || null;
+      setConfirmedProduct(producto);
+      console.log("Confirmando compra:", producto);
     }
-  }
-
+  };
+  
   return (
+    <div>
     <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)]  lg:p-6">
       <div>
         <h2 className="text-xl font-bold text-primary mb-3">Descripcion del juego</h2>
@@ -110,5 +120,14 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
         </Accordion>
       </div>
     </div>
+    {confirmedProduct && (
+  <FormsGamesWhatsApp 
+    gameName={game}
+    coinAmount={confirmedProduct.amount ?? confirmedProduct.title ?? ""}
+  />
+)}
+    </div>
   )
 }
+
+
