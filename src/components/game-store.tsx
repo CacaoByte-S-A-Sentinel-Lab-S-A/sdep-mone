@@ -35,7 +35,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)] p-6">
+    <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)]  lg:p-6">
       <div>
         <h2 className="text-xl font-bold text-primary mb-3">Descripcion del juego</h2>
         <p className="text-sm text-[var(--text-color-lighten)]">
