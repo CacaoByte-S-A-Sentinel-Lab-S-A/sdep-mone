@@ -64,5 +64,5 @@ export default defineConfig({
 
   
   adapter: cloudflare(),
-  adapter: vercel(),
+ // adapter: vercel(),
 });
