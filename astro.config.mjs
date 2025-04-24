@@ -21,6 +21,8 @@ import pagefind from "astro-pagefind";
 export default defineConfig({
   site: SdepMoneConfig.site,
 
+  output: "static",
+
   integrations: [
     svelte(),
     react(),
