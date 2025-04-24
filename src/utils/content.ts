@@ -18,6 +18,7 @@ export interface Archive {
   };
   gameSlug?: string;
   gameId?: string;
+  titleGame?: string; 
 }
 
 /**
@@ -66,6 +67,7 @@ type PostWithGames = {
         readingMetadata: { time: number; wordCount: number };
         gameSlug?: string;
         gameId?: string;
+        titleGame?: string;
       };
     };
   };
@@ -77,6 +79,7 @@ type PostWithGames = {
 function generatePostUrl(post: PostWithGames): string {
   const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
   const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+  const titleGame = post.rendered?.metadata?.frontmatter?.titleGame;
 
   return gameSlug && gameId
     ? `/games/${gameSlug}/${gameId}`
@@ -125,6 +128,7 @@ export async function GetArchives() {
 
     const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
     const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+    const titleGame = post.rendered?.metadata?.frontmatter?.titleGame;
     const readingMetadata = post.rendered?.metadata?.frontmatter?.readingMetadata ?? {
       time: 0,
       wordCount: 0,
@@ -147,6 +151,7 @@ export async function GetArchives() {
       readingMetadata: readingMetadata,
       gameSlug: gameSlug,
       gameId: gameId,
+      titleGame: titleGame,
     });
   }
 
@@ -176,6 +181,7 @@ export async function GetTags() {
 
       const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
       const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+      const titleGame = post.rendered?.metadata?.frontmatter?.titleGame;
 
       if (!tags.has(tagSlug)) {
         tags.set(tagSlug, {
@@ -194,6 +200,8 @@ export async function GetTags() {
         tags: post.data.tags,
         gameSlug: gameSlug,
         gameId: gameId,
+        titleGame: titleGame,
+
       });
     });
   });
@@ -218,6 +226,7 @@ export async function GetCategories() {
 
     const gameSlug = post.rendered?.metadata?.frontmatter?.gameSlug;
     const gameId = post.rendered?.metadata?.frontmatter?.gameId;
+    const titleGame = post.rendered?.metadata?.frontmatter?.titleGame;
     const readingMetadata = post.rendered?.metadata?.frontmatter?.readingMetadata ?? {
       time: 0,
       wordCount: 0,
@@ -244,6 +253,7 @@ export async function GetCategories() {
       readingMetadata: readingMetadata,   
       gameSlug: gameSlug,
       gameId: gameId,
+      titleGame: titleGame,
     });
   });
 

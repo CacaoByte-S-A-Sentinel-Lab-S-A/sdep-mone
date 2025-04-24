@@ -7,7 +7,8 @@ const SdepMoneConfig: Configuration = {
     sdep: "Sdep",
     mone: "Mone",
   },
-  subTitle: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
+  subTitle: "Las mejores monedas para tus juegos móviles, al mejor precio y con total seguridad.",
+  titleGame: "SdepMone",
   brandTitle: "SdepMone",
   
   logoUrl: "/logo.svg",
@@ -23,10 +24,10 @@ const SdepMoneConfig: Configuration = {
       nameKey: I18nKeys.nav_bar_home,
       href: "/",
     },
-    {
-      nameKey: I18nKeys.nav_bar_archive,
-      href: "/games",
-    },
+    // {
+    //   nameKey: I18nKeys.nav_bar_archive,
+    //   href: "/games",
+    // },
   ],
 
   username: "SdepMone",

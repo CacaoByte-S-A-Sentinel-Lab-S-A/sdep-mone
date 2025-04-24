@@ -9,6 +9,7 @@ interface Configuration {
     mone: string;
   };
   subTitle: string;
+  titleGame: string;
   brandTitle: string;
   logoUrl: string;
 
