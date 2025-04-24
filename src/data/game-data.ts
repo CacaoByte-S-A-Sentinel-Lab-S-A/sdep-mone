@@ -47,7 +47,7 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00" }
     ]
   },
-  "honor-of-kings": {
+  "honor-kings": {
     tokens: [
       { amount: "80 (+8)", price: "Q11.00" },
       { amount: "240 (+17)", price: "Q34.00" },
@@ -149,6 +149,15 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "1800 (+300)", price: "Q238.00" },
       { amount: "3850 (+850)", price: "Q470.00" },
       { amount: "8110 (+2100)", price: "Q926.00" }
+    ]
+  },
+  "farlight": {
+    Diamantes: [
+      { amount: "220", price: "Q21.00" },
+      { amount: "330", price: "Q32.00" },
+      { amount: "880", price: "Q83.00" },
+      { amount: "2240", price: "Q204.00" },
+      { amount: "4700", price: "Q374.00" },
     ]
   }
 }

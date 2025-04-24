@@ -66,7 +66,7 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
   
       const mensaje = `¡Hola Enrique! 👋\n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n- ID de cuenta: ${idCuenta}\n- Región/Servidor: ${region}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! 🙌`;
   
-      const numeroWhatsApp = "50258261532"; 
+      const numeroWhatsApp = "50238349425"; 
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   
       window.open(url, "_blank"); 

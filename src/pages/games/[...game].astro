@@ -1,7 +1,7 @@
 ---
 import SdepMoneConfig from "app.config";
 import MainLayout from "../../layouts/MainLayout.astro";
-import FormsGamesWhatsApp from "@/components/forms/FormsGames";
+import  PaymentMethods from "@/components/payments/PaymentMethods";
 import GameStore from "@/components/game-store";
 import { gameData } from "@/data/game-data";
 
@@ -27,4 +27,5 @@ const bannerImage = SdepMoneConfig.gameBanner[game];
       client:load
     />
   </div>
+  <PaymentMethods/>
 </MainLayout>

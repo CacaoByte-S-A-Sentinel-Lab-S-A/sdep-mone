@@ -54,7 +54,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
       </div>
 
       <div className="space-y-6">
-        <Accordion type="multiple" className="w-full border-none select-none">
+        <Accordion type="multiple" className="w-full border-none select-none" defaultValue={[Object.keys(currentGame)[0]]} >
           {Object.entries(currentGame).map(([categoria, items]) => (
             <AccordionItem value={categoria} key={categoria} className="border-b-0">
               <AccordionTrigger className="py-2 hover:no-underline">
