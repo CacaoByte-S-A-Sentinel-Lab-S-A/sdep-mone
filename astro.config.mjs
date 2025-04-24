@@ -15,8 +15,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 import SdepMoneConfig from "./app.config";
 import pagefind from "astro-pagefind";
-import vercel from "@astrojs/vercel";
-import cloudflare from '@astrojs/cloudflare';
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -63,6 +62,5 @@ export default defineConfig({
   },
 
   
-  adapter: cloudflare(),
- // adapter: vercel(),
+
 });
