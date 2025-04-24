@@ -32,6 +32,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "mobile-legends": {
+    description: "Recarga diamantes y obtén pases semanales en Mobile Legends. Mejora tu experiencia MOBA.",
     productos: {
     diamantes: [
       { amount: "172", price: "Q32.63" },
@@ -59,6 +60,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "honor-kings": {
+    description: "Consigue tokens y pases especiales para dominar en Honor of Kings con tus héroes favoritos.",
     productos: {
     tokens: [
       { amount: "80 (+8)", price: "Q11.00" },
@@ -76,6 +78,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "genshin-impact": {
+    description: "Recarga cristales y obtén bendiciones en Genshin Impact. Explora Teyvat al máximo.",
     productos: {
     "cristales-genesis": [
       { amount: "60", price: "Q10.00" },
@@ -94,6 +97,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "honkai-start-rail": {
+    description: "Compra cristales y el pase Expreso para avanzar rápidamente en Honkai: Star Rail.",
     productos: {
     cristales: [
       { amount: "60", price: "Q10.00" },
@@ -107,6 +111,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "blood-strike": {
+    description: "Recarga oro y desbloquea pases exclusivos en Blood Strike. Acción intensa sin límites.",
     productos: {
     golds: [
       { amount: "105", price: "Q10.00" },
@@ -123,6 +128,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "zenless-zone-zero": {
+    description: "Consigue monocromos y la suscripción Proxy en Zenless Zone Zero. Prepárate para el combate urbano.",
     productos: {
     monocromos: [
       { amount: "60", price: "Q11.00" },
@@ -136,6 +142,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "arena-breakout": {
+    description: "Equípate con bonos, pases y maletines en Arena Breakout. ¡Prepárate para sobrevivir!",
     productos: {
     bonds: [
       { amount: "220", price: "Q21.00" },
@@ -165,6 +172,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "pubg": {
+    description: "Recarga UC en PUBG Mobile para comprar skins, pases y más. ¡Juega como un pro!",
     productos: {
     uc: [
       { amount: "60", price: "Q10.00" },
@@ -177,6 +185,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "farlight": {
+    description: "Obtén diamantes para Farlight y lleva tus batallas futuristas al siguiente nivel.",
     productos: {
     Diamantes: [
       { amount: "220", price: "Q21.00" },
