@@ -8,6 +8,7 @@ const SdepMoneConfig: Configuration = {
     mone: "Mone",
   },
   subTitle: "Las mejores monedas para tus juegos móviles, al mejor precio y con total seguridad.",
+  titleGame: "SdepMone",
   brandTitle: "SdepMone",
   
   logoUrl: "/logo.svg",

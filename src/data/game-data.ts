@@ -1,7 +1,14 @@
 import type { JuegoProductos } from "@/components/game-store"
 
-export const gameData: Record<string, JuegoProductos> = {
+interface GameWithDescription {
+  description?: string;
+  productos: JuegoProductos;
+}
+
+export const gameData: Record<string, GameWithDescription > = {
   "free-fire": {
+    description: "Recarga diamantes al instante en Free Fire. Compra rápida y segura.",
+    productos: {
     diamantes: [
       { amount: "100 (+10)", price: "Q11.50" },
       { amount: "200 (+20)", price: "Q23.00" },
@@ -16,13 +23,16 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "5600 (+560)", price: "Q462.00" },
       { amount: "11200 (+1120)", price: "Q910.00" }
     ],
+  
     tarjetas: [
       { title: "Semanal 10 Diamantes", subtitle: "Inst. + 10/día (7 días)", price: "Q6.00" },
       { title: "Semanal Plus 60 Diamantes", subtitle: "Inst. + 40/día (7 días)", price: "Q22.00" },
       { title: "Mensual 300 Diamantes", subtitle: "Inst. + 50/día (30 días)", price: "Q104.00" }
-    ]
+    ],
+  }
   },
   "mobile-legends": {
+    productos: {
     diamantes: [
       { amount: "172", price: "Q32.63" },
       { amount: "280", price: "Q54.00" },
@@ -46,8 +56,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "86 Diamantes + Doble Semanal", price: "Q60.00" },
       { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00" }
     ]
+  }
   },
   "honor-kings": {
+    productos: {
     tokens: [
       { amount: "80 (+8)", price: "Q11.00" },
       { amount: "240 (+17)", price: "Q34.00" },
@@ -61,8 +73,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Pase Semanal Azul", price: "Q10.00" },
       { title: "Pase Semanal Plus Amarillo", price: "Q31.00" }
     ]
+  }
   },
   "genshin-impact": {
+    productos: {
     "cristales-genesis": [
       { amount: "60", price: "Q10.00" },
       { amount: "300 (+30)", price: "Q51.00" },
@@ -77,8 +91,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Lunar x3 (90 días)", subtitle: "900 Cristales + 90 protogemas/día", price: "Q158.00" },
       { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00" }
     ]
+  }
   },
   "honkai-start-rail": {
+    productos: {
     cristales: [
       { amount: "60", price: "Q10.00" },
       { amount: "330", price: "Q51.00" },
@@ -88,8 +104,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "8080", price: "Q954.00" },
       { title: "Expreso", price: "Q47.00" }
     ]
+  }
   },
   "blood-strike": {
+    productos: {
     golds: [
       { amount: "105", price: "Q10.00" },
       { amount: "320", price: "Q29.00" },
@@ -102,8 +120,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Elite", price: "Q41.00" },
       { title: "Elite Plus", price: "Q94.00" }
     ]
+  }
   },
   "zenless-zone-zero": {
+    productos: {
     monocromos: [
       { amount: "60", price: "Q11.00" },
       { amount: "300 (+30)", price: "Q50.00" },
@@ -113,8 +133,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "6480 (+1600)", price: "Q900.00" },
       { title: "Subscripción Proxy 30D", price: "Q47.00" }
     ]
+  }
   },
   "arena-breakout": {
+    productos: {
     bonds: [
       { amount: "220", price: "Q21.00" },
       { amount: "330", price: "Q32.00" },
@@ -140,8 +162,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { title: "Paquete Principiante", price: "Q9.00" },
       { title: "Elite De Prueba", price: "Q47.00" }
     ]
+  }
   },
   "pubg": {
+    productos: {
     uc: [
       { amount: "60", price: "Q10.00" },
       { amount: "325 (+25)", price: "Q50.00" },
@@ -150,8 +174,10 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "3850 (+850)", price: "Q470.00" },
       { amount: "8110 (+2100)", price: "Q926.00" }
     ]
+  }
   },
   "farlight": {
+    productos: {
     Diamantes: [
       { amount: "220", price: "Q21.00" },
       { amount: "330", price: "Q32.00" },
@@ -160,4 +186,5 @@ export const gameData: Record<string, JuegoProductos> = {
       { amount: "4700", price: "Q374.00" },
     ]
   }
+}
 }

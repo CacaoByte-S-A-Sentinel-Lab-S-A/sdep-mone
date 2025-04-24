@@ -12,15 +12,21 @@ interface Producto {
   price: string
   title?: string
   subtitle?: string
+  description?: string
 }
 
 export interface JuegoProductos {
   [categoria: string]: Producto[]
 }
 
+interface GameWithDescription {
+  description?: string;
+  productos: JuegoProductos;
+}
+
 interface GameStoreProps {
   game: string
-  gameData: Record<string, JuegoProductos>
+  gameData: Record<string, { description?: string; productos: JuegoProductos }>;
 }
 
 export default function GameStore({ game, gameData }: GameStoreProps) {
@@ -28,34 +34,37 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [confirmedProduct, setConfirmedProduct] = useState<Producto | null>(null);
 
+  const { productos: currentProductos = {}, description: gameDescription } = gameData[game] || {};
 
   const currentGame = gameData[game] || {}
   const selectedProduct = selectedCategoria && selectedIndex !== null
-  ? currentGame[selectedCategoria]?.[selectedIndex]
+  ? currentProductos[selectedCategoria]?.[selectedIndex]
   : null;
 
 
-  const handleConfirm = () => {
-    if (selectedCategoria && selectedIndex !== null) {
-      const producto = currentGame[selectedCategoria]?.[selectedIndex] || null;
-      setConfirmedProduct(producto);
-      console.log("Confirmando compra:", producto);
-    }
-  };
+
+  // const handleConfirm = () => {
+  //   if (selectedCategoria && selectedIndex !== null) {
+  //     const producto = currentGame[selectedCategoria]?.[selectedIndex] || null;
+  //     setConfirmedProduct(producto);
+  //     console.log("Confirmando compra:", producto);
+  //   }
+  // };
   
   return (
     <div>
     <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)]  lg:p-6">
       <div>
         <h2 className="text-xl font-bold text-primary mb-3">Descripcion del juego</h2>
-        <p className="text-sm text-[var(--text-color-lighten)]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit...
-        </p>
+        {gameDescription && (
+          <p className="text-sm text-[var(--text-color-lighten)]">{gameDescription}</p>
+        )}
       </div>
 
       <div className="space-y-6">
         <Accordion type="multiple" className="w-full border-none select-none" defaultValue={[Object.keys(currentGame)[0]]} >
-          {Object.entries(currentGame).map(([categoria, items]) => (
+        {Object.entries(currentProductos).map(([categoria, items]) => (
+
             <AccordionItem value={categoria} key={categoria} className="border-b-0">
               <AccordionTrigger className="py-2 hover:no-underline">
                 <h2 className="text-xl font-bold text-orange-500 text-left capitalize">{categoria.replace(/-/g, ' ')}</h2>

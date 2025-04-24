@@ -8,8 +8,9 @@ export interface Props {
   subTitle?: string;
   bannerImage?: string;
   slug?: string;
+  titleGame?: string;
 }
-const { title, subTitle, bannerImage, slug } = Astro.props ?? {};
+const { title, subTitle, bannerImage, slug, titleGame } = Astro.props ?? {};
 
 const hasTitle = title !== undefined || subTitle !== undefined;
 const hasHeaderImg = bannerImage !== undefined || slug !== undefined;
@@ -57,7 +58,7 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
           >
             {title ?? SdepMoneConfig.title}
           </h1>
-          <h2 class="subtitle">{subTitle ?? SdepMoneConfig.subTitle}</h2>
+          <!-- <h2 class="subtitle">{titleGame ?? SdepMoneConfig.titleGame }</h2> -->
         </div>
       </div>
     </div>
