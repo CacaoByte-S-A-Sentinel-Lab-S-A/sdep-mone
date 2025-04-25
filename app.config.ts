@@ -11,7 +11,7 @@ const SdepMoneConfig: Configuration = {
   titleGame: "SdepMone",
   brandTitle: "SdepMone",
   
-  logoUrl: "/logo.svg",
+  logoUrl: "/sdeepmone.svg",
 
   description: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
 

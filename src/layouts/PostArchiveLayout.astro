@@ -22,32 +22,35 @@ const { archiveMap, title, subTitle, bannerImage, slug, titleGame} = Astro.props
 ---
 
 <Main title={title} subTitle={subTitle} bannerImage={bannerImage} slug={slug}>
-  <div class="archives">
+  <div class=" mb-8 space-y-8">
     {
+      
       archiveMap.size !== 0 &&
-        [...archiveMap.keys()].map((year) => (
-          <div>
-          
-            <ul>
-              {archiveMap.get(year)?.map((entry) => (
-                <div>
-                        <PostCard
-                    id={entry.id}
-                    title={entry.title}
-                    published={entry.date}
-                    category={entry.category}
-                    tags={entry.tags}
-                    description={entry.description}
-                    image={entry.cover}
-                    readingMetadata={entry.readingMetadata ?? { time: 0, wordCount: 0 }}
-                    gameSlug={(entry as any).gameSlug}
-                    gameId={(entry as any).gameId}
-                  />
-                </div>
-              ))}
-            </ul>
-          </div>
-        ))
+      [...archiveMap.keys()].map((year) => (
+  <div
+    class="onload-animation"
+    style={`animation-delay: calc(var(--onload-animation-delay)  * var(--onload-animation-interval));`}
+  >
+    {archiveMap.get(year)?.map((entry) => (
+      <div class="mb-6 w-full">
+      <PostCard
+        id={entry.id}
+        title={entry.title}
+        published={entry.date}
+        category={entry.category}
+        tags={entry.tags}
+        description={entry.description}
+        image={entry.cover}
+        readingMetadata={entry.readingMetadata ?? { time: 0, wordCount: 0 }}
+        gameSlug={(entry as any).gameSlug}
+        gameId={(entry as any).gameId}
+      />
+    </div>
+
+    ))}
+  </div>
+))
+
     }
   </div>
 </Main>

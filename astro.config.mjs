@@ -16,6 +16,8 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import SdepMoneConfig from "./app.config";
 import pagefind from "astro-pagefind";
 
+import vercel from "@astrojs/vercel";
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -63,6 +65,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  
+  adapter: vercel(),
 
 });
