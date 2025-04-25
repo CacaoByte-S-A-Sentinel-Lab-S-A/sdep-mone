@@ -1,6 +1,7 @@
 import type { JuegoProductos } from "@/components/game-store"
 
 interface GameWithDescription {
+  items?: string;
   description?: string;
   productos: JuegoProductos;
 }
@@ -8,6 +9,7 @@ interface GameWithDescription {
 export const gameData: Record<string, GameWithDescription > = {
   "free-fire": {
     description: "Recarga diamantes al instante en Free Fire. Compra rápida y segura.",
+    items:"/sdeepmone.svg",
     productos: {
     diamantes: [
       { amount: "100 (+10)", price: "Q11.50" },
@@ -32,6 +34,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "mobile-legends": {
+    items:"/sdeepmone.svg",
     description: "Recarga diamantes y obtén pases semanales en Mobile Legends. Mejora tu experiencia MOBA.",
     productos: {
     diamantes: [
@@ -60,6 +63,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "honor-kings": {
+    items:"/sdeepmone.svg",
     description: "Consigue tokens y pases especiales para dominar en Honor of Kings con tus héroes favoritos.",
     productos: {
     tokens: [
@@ -78,6 +82,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "genshin-impact": {
+    items:"/sdeepmone.svg",
     description: "Recarga cristales y obtén bendiciones en Genshin Impact. Explora Teyvat al máximo.",
     productos: {
     "cristales-genesis": [
@@ -97,6 +102,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "honkai-start-rail": {
+    items:"/sdeepmone.svg",
     description: "Compra cristales y el pase Expreso para avanzar rápidamente en Honkai: Star Rail.",
     productos: {
     cristales: [
@@ -111,6 +117,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "blood-strike": {
+    items:"/sdeepmone.svg",
     description: "Recarga oro y desbloquea pases exclusivos en Blood Strike. Acción intensa sin límites.",
     productos: {
     golds: [
@@ -128,6 +135,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "zenless-zone-zero": {
+    items:"/sdeepmone.svg",
     description: "Consigue monocromos y la suscripción Proxy en Zenless Zone Zero. Prepárate para el combate urbano.",
     productos: {
     monocromos: [
@@ -142,6 +150,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "arena-breakout": {
+    items:"/sdeepmone.svg",
     description: "Equípate con bonos, pases y maletines en Arena Breakout. ¡Prepárate para sobrevivir!",
     productos: {
     bonds: [
@@ -172,6 +181,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "pubg": {
+    items:"/sdeepmone.svg",
     description: "Recarga UC en PUBG Mobile para comprar skins, pases y más. ¡Juega como un pro!",
     productos: {
     uc: [
@@ -185,6 +195,7 @@ export const gameData: Record<string, GameWithDescription > = {
   }
   },
   "farlight": {
+    items:"/sdeepmone.svg",
     description: "Obtén diamantes para Farlight y lleva tus batallas futuristas al siguiente nivel.",
     productos: {
     Diamantes: [

@@ -44,7 +44,7 @@ const SdepMoneConfig: Configuration = {
     },
     {
       icon: "mingcute:whatsapp-fill",
-      link: "https://whatsapp.com/channel/0029Vb9eM4ZCXC3JMC4UtB1W",
+      link: "https://wa.me/50238349425",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
