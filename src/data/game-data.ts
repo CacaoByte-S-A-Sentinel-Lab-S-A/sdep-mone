@@ -67,17 +67,17 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Consigue tokens y pases especiales para dominar en Honor of Kings con tus héroes favoritos.",
     productos: {
     tokens: [
-      { amount: "80 (+8)", price: "Q11.00" },
-      { amount: "240 (+17)", price: "Q34.00" },
-      { amount: "400 (+32)", price: "Q57.00" },
-      { amount: "560 (+45)", price: "Q77.00" },
-      { amount: "800 (+95)", price: "Q98.00" },
-      { amount: "1200 (+153)", price: "Q153.00" },
-      { amount: "2400 (+324)", price: "Q334.00" }
+      { amount: "80 (+8)", price: "Q11.00", image: "/sdeepmone.svg" },
+      { amount: "240 (+17)", price: "Q34.00", image: "/sdeepmone.svg" },
+      { amount: "400 (+32)", price: "Q57.00", image: "/sdeepmone.svg" },
+      { amount: "560 (+45)", price: "Q77.00", image: "/sdeepmone.svg" },
+      { amount: "800 (+95)", price: "Q98.00", image: "/sdeepmone.svg" },
+      { amount: "1200 (+153)", price: "Q153.00", image: "/sdeepmone.svg" },
+      { amount: "2400 (+324)", price: "Q334.00", image: "/sdeepmone.svg" }
     ],
     pase: [
-      { title: "Pase Semanal Azul", price: "Q10.00" },
-      { title: "Pase Semanal Plus Amarillo", price: "Q31.00" }
+      { title: "Pase Semanal Azul", price: "Q10.00", image: "/sdeepmone.svg" },
+      { title: "Pase Semanal Plus Amarillo", price: "Q31.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -86,18 +86,18 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga cristales y obtén bendiciones en Genshin Impact. Explora Teyvat al máximo.",
     productos: {
     "cristales-genesis": [
-      { amount: "60", price: "Q10.00" },
-      { amount: "300 (+30)", price: "Q51.00" },
-      { amount: "980 + 110", price: "Q149.00" },
-      { amount: "1980 + 260", price: "Q319.00" },
-      { amount: "3280 (+600)", price: "Q485.00" },
-      { amount: "6480 (+1600)", price: "Q954.00" }
+      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
+      { amount: "300 (+30)", price: "Q51.00", image: "/sdeepmone.svg" },
+      { amount: "980 + 110", price: "Q149.00", image: "/sdeepmone.svg" },
+      { amount: "1980 + 260", price: "Q319.00", image: "/sdeepmone.svg" },
+      { amount: "3280 (+600)", price: "Q485.00", image: "/sdeepmone.svg" },
+      { amount: "6480 (+1600)", price: "Q954.00", image: "/sdeepmone.svg" }
     ],
     "bendicion": [
-      { title: "Lunar x1 (30 días)", subtitle: "300 Cristales + 90 protogemas/día", price: "Q54.00" },
-      { title: "Lunar x2 (60 días)", subtitle: "600 Cristales + 90 protogemas/día", price: "Q107.00" },
-      { title: "Lunar x3 (90 días)", subtitle: "900 Cristales + 90 protogemas/día", price: "Q158.00" },
-      { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00" }
+      { title: "Lunar x1 (30 días)", subtitle: "300 Cristales + 90 protogemas/día", price: "Q54.00", image: "/sdeepmone.svg" },
+      { title: "Lunar x2 (60 días)", subtitle: "600 Cristales + 90 protogemas/día", price: "Q107.00", image: "/sdeepmone.svg" },
+      { title: "Lunar x3 (90 días)", subtitle: "900 Cristales + 90 protogemas/día", price: "Q158.00", image: "/sdeepmone.svg" },
+      { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -106,13 +106,13 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Compra cristales y el pase Expreso para avanzar rápidamente en Honkai: Star Rail.",
     productos: {
     cristales: [
-      { amount: "60", price: "Q10.00" },
-      { amount: "330", price: "Q51.00" },
-      { amount: "1090", price: "Q149.00" },
-      { amount: "2240", price: "Q319.00" },
-      { amount: "3880", price: "Q485.00" },
-      { amount: "8080", price: "Q954.00" },
-      { amount: "Expreso", price: "Q47.00" }
+      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
+      { amount: "330", price: "Q51.00", image: "/sdeepmone.svg" },
+      { amount: "1090", price: "Q149.00", image: "/sdeepmone.svg" },
+      { amount: "2240", price: "Q319.00", image: "/sdeepmone.svg" },
+      { amount: "3880", price: "Q485.00", image: "/sdeepmone.svg" },
+      { amount: "8080", price: "Q954.00", image: "/sdeepmone.svg" },
+      { amount: "Expreso", price: "Q47.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -121,16 +121,16 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga oro y desbloquea pases exclusivos en Blood Strike. Acción intensa sin límites.",
     productos: {
     golds: [
-      { amount: "105", price: "Q10.00" },
-      { amount: "320", price: "Q29.00" },
-      { amount: "540", price: "Q46.00" },
-      { amount: "1100", price: "Q89.00" },
-      { amount: "2260", price: "Q171.00" },
-      { amount: "5800", price: "Q429.00" }
+      { amount: "105", price: "Q10.00", image: "/sdeepmone.svg" },
+      { amount: "320", price: "Q29.00", image: "/sdeepmone.svg" },
+      { amount: "540", price: "Q46.00", image: "/sdeepmone.svg" },
+      { amount: "1100", price: "Q89.00", image: "/sdeepmone.svg" },
+      { amount: "2260", price: "Q171.00", image: "/sdeepmone.svg" },
+      { amount: "5800", price: "Q429.00", image: "/sdeepmone.svg" }
     ],
     pase: [
-      { title: "Elite", price: "Q41.00" },
-      { title: "Elite Plus", price: "Q94.00" }
+      { title: "Elite", price: "Q41.00", image: "/sdeepmone.svg" },
+      { title: "Elite Plus", price: "Q94.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -139,13 +139,13 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Consigue monocromos y la suscripción Proxy en Zenless Zone Zero. Prepárate para el combate urbano.",
     productos: {
     monocromos: [
-      { amount: "60", price: "Q11.00" },
-      { amount: "300 (+30)", price: "Q50.00" },
-      { amount: "980 (+110)", price: "Q145.00" },
-      { amount: "1980 (+260)", price: "Q303.00" },
-      { amount: "3280 (+600)", price: "Q457.00" },
-      { amount: "6480 (+1600)", price: "Q900.00" },
-      { amount: "Subscripción Proxy 30D", price: "Q47.00" }
+      { amount: "60", price: "Q11.00", image: "/sdeepmone.svg" },
+      { amount: "300 (+30)", price: "Q50.00", image: "/sdeepmone.svg" },
+      { amount: "980 (+110)", price: "Q145.00", image: "/sdeepmone.svg" },
+      { amount: "1980 (+260)", price: "Q303.00", image: "/sdeepmone.svg" },
+      { amount: "3280 (+600)", price: "Q457.00", image: "/sdeepmone.svg" },
+      { amount: "6480 (+1600)", price: "Q900.00", image: "/sdeepmone.svg" },
+      { amount: "Subscripción Proxy 30D", price: "Q47.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -154,29 +154,29 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Equípate con bonos, pases y maletines en Arena Breakout. ¡Prepárate para sobrevivir!",
     productos: {
     bonds: [
-      { amount: "220", price: "Q21.00" },
-      { amount: "330", price: "Q32.00" },
-      { amount: "880", price: "Q83.00" },
-      { amount: "2240", price: "Q204.00" },
-      { amount: "4700", price: "Q374.00" },
-      { amount: "60", price: "Q10.00" },
-      { amount: "335", price: "Q51.00" },
-      { amount: "675", price: "Q99.00" },
-      { amount: "1690", price: "Q243.00" },
-      { amount: "3400", price: "Q450.00" },
-      { amount: "6820", price: "Q934.00" }
+      { amount: "220", price: "Q21.00", image: "/sdeepmone.svg" },
+      { amount: "330", price: "Q32.00", image: "/sdeepmone.svg" },
+      { amount: "880", price: "Q83.00", image: "/sdeepmone.svg" },
+      { amount: "2240", price: "Q204.00", image: "/sdeepmone.svg" },
+      { amount: "4700", price: "Q374.00", image: "/sdeepmone.svg" },
+      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
+      { amount: "335", price: "Q51.00", image: "/sdeepmone.svg" },
+      { amount: "675", price: "Q99.00", image: "/sdeepmone.svg" },
+      { amount: "1690", price: "Q243.00", image: "/sdeepmone.svg" },
+      { amount: "3400", price: "Q450.00", image: "/sdeepmone.svg" },
+      { amount: "6820", price: "Q934.00", image: "/sdeepmone.svg" }
     ],
     pase: [
-      { title: "Avanzado", price: "Q49.00" },
-      { title: "Premium", price: "Q140.00" },
+      { title: "Avanzado", price: "Q49.00", image: "/sdeepmone.svg" },
+      { title: "Premium", price: "Q140.00", image: "/sdeepmone.svg" },
     ],
     maletin: [
-      { title: "Antibalas", price: "Q28.00" },
-      { title: "Compuesto", price: "Q82.00" },
+      { title: "Antibalas", price: "Q28.00", image: "/sdeepmone.svg" },
+      { title: "Compuesto", price: "Q82.00", image: "/sdeepmone.svg" },
     ],
     otros: [
-      { title: "Paquete Principiante", price: "Q9.00" },
-      { title: "Elite De Prueba", price: "Q47.00" }
+      { title: "Paquete Principiante", price: "Q9.00", image: "/sdeepmone.svg" },
+      { title: "Elite De Prueba", price: "Q47.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -185,12 +185,12 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga UC en PUBG Mobile para comprar skins, pases y más. ¡Juega como un pro!",
     productos: {
     uc: [
-      { amount: "60", price: "Q10.00" },
-      { amount: "325 (+25)", price: "Q50.00" },
-      { amount: "660 (+60)", price: "Q97.00" },
-      { amount: "1800 (+300)", price: "Q238.00" },
-      { amount: "3850 (+850)", price: "Q470.00" },
-      { amount: "8110 (+2100)", price: "Q926.00" }
+      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
+      { amount: "325 (+25)", price: "Q50.00", image: "/sdeepmone.svg" },
+      { amount: "660 (+60)", price: "Q97.00", image: "/sdeepmone.svg" },
+      { amount: "1800 (+300)", price: "Q238.00", image: "/sdeepmone.svg" },
+      { amount: "3850 (+850)", price: "Q470.00", image: "/sdeepmone.svg" },
+      { amount: "8110 (+2100)", price: "Q926.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -199,11 +199,11 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Obtén diamantes para Farlight y lleva tus batallas futuristas al siguiente nivel.",
     productos: {
     Diamantes: [
-      { amount: "220", price: "Q21.00" },
-      { amount: "330", price: "Q32.00" },
-      { amount: "880", price: "Q83.00" },
-      { amount: "2240", price: "Q204.00" },
-      { amount: "4700", price: "Q374.00" },
+      { amount: "220", price: "Q21.00", image: "/sdeepmone.svg" },
+      { amount: "330", price: "Q32.00", image: "/sdeepmone.svg" },
+      { amount: "880", price: "Q83.00", image: "/sdeepmone.svg" },
+      { amount: "2240", price: "Q204.00", image: "/sdeepmone.svg" },
+      { amount: "4700", price: "Q374.00", image: "/sdeepmone.svg" },
     ]
   }
 }
