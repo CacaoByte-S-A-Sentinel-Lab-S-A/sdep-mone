@@ -13,6 +13,7 @@ interface Producto {
   title?: string
   subtitle?: string
   description?: string
+  image?: string
 }
 
 export interface JuegoProductos {
@@ -26,7 +27,7 @@ interface GameWithDescription {
 
 interface GameStoreProps {
   game: string
-  gameData: Record<string, { description?: string; productos: JuegoProductos }>;
+  gameData: Record<string, { description?: string; items?: string, productos: JuegoProductos }>;
 }
 
 export default function GameStore({ game, gameData }: GameStoreProps) {
@@ -34,7 +35,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [confirmedProduct, setConfirmedProduct] = useState<Producto | null>(null);
 
-  const { productos: currentProductos = {}, description: gameDescription } = gameData[game] || {};
+  const { productos: currentProductos = {}, description: gameDescription, items: itemsGame  } = gameData[game] || {};
 
   const currentGame = gameData[game] || {}
   const selectedProduct = selectedCategoria && selectedIndex !== null
@@ -90,22 +91,32 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                               setSelectedIndex(index)
                             }}
                           >
-                            <CardContent className="p-4 flex flex-col items-center">
+                          <CardContent className="p-4 flex flex-col items-center justify-between h-56">
+                            {/* Imagen y cantidad */}
+                            <div className="flex flex-col items-center ">
+                              <div className="w-auto h-35  flex items-center justify-center ">
+                                {item.image ? (
+                                  <img src={item.image} alt="Icono" className="w-auto h-35" />
+                                ) : (
+                                  <div className="w-auto h-35" />
+                                )}
+                              </div>
                               {item.amount && (
-                                <div className="flex items-center text-blue-400 mb-2 mt-2">
-                                  <Diamond className="fill-blue-400 stroke-blue-400 mr-2" size={20} />
-                                  <span className="font-bold">{item.amount}</span>
-                                </div>
+                                <span className="font-bold text-blue-400 text-sm">{item.amount}</span>
                               )}
-                              {item.title && (
-                                <div className="text-center font-medium mb-2 mt-2">
-                                  {item.title}
-                                  <br />
-                                  {item.subtitle}
-                                </div>
-                              )}
-                              <div className="text-center font-bold">{item.price}</div>
-                            </CardContent>
+                            </div>
+
+                            {/* Título y subtítulo */}
+                            {(item.title || item.subtitle) && (
+                              <div className="text-center text-sm text-white font-medium ">
+                                {item.title && <div className="text-base font-semibold">{item.title}</div>}
+                                {item.subtitle && <div className="text-xs text-gray-300">{item.subtitle}</div>}
+                              </div>
+                            )}
+
+                            {/* Precio */}
+                            <div className="text-center font-bold text-orange-400 text-base">{item.price}</div>
+                          </CardContent>
                           </Card>
                         </CarouselItem>
                       ))}

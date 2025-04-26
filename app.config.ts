@@ -11,7 +11,7 @@ const SdepMoneConfig: Configuration = {
   titleGame: "SdepMone",
   brandTitle: "SdepMone",
   
-  logoUrl: "/logo.svg",
+  logoUrl: "/sdeepmone.svg",
 
   description: "Necesitas monedas para los mejores juegos mobiles, solo en SdepMone tienes las mejores ofertas y con la mayor seguridad",
 
@@ -44,7 +44,7 @@ const SdepMoneConfig: Configuration = {
     },
     {
       icon: "mingcute:whatsapp-fill",
-      link: "https://whatsapp.com/channel/0029Vb9eM4ZCXC3JMC4UtB1W",
+      link: "https://wa.me/50238349425",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
@@ -57,7 +57,7 @@ const SdepMoneConfig: Configuration = {
     "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg", // Genshin Impact
     "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg", // Mobile Legends
     "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg", // Honor of Kings
-    "https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart", // Honkai Star Rail
+    "/Fondo_honkai_2.webp", // Honkai Star Rail
     "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg", // Blood Strike
     "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg", // Zenless Zone Zero
     "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg", // Arena Breakout
@@ -70,7 +70,7 @@ const SdepMoneConfig: Configuration = {
     "genshin-impact": "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg",
     "mobile-legends": "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg",
     "honor-kings": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg",
-    "honkai-start-rail": "https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart",
+    "honkai-start-rail": "/Fondo_honkai_2.webp",
     "blood-strike": "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg",
     "zenless-zone-zero": "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
     "arena-breakout": "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
