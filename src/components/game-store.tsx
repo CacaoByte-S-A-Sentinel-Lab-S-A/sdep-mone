@@ -91,32 +91,32 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                               setSelectedIndex(index)
                             }}
                           >
-                            <CardContent className="p-4 flex flex-col items-center justify-center h-48">
-                              <div className="flex flex-col items-center text-blue-400 mb-2 mt-2 h-16">
-                                {item.amount ? (
-                                  <div className="flex flex-col items-center">
-                                    <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-1">
-                                      <img src={item.image} alt="Icono" className="w-6 h-6 object-contain" />
-                                    </div>
-                                    <span className="font-bold text-base">{item.amount}</span>
-                                  </div>
+                          <CardContent className="p-4 flex flex-col items-center justify-between h-56">
+                            {/* Imagen y cantidad */}
+                            <div className="flex flex-col items-center ">
+                              <div className="w-auto h-35  flex items-center justify-center ">
+                                {item.image ? (
+                                  <img src={item.image} alt="Icono" className="w-auto h-35" />
                                 ) : (
-                                  <div className="w-12 h-12 mb-1" /> // espacio reservado
+                                  <div className="w-auto h-35" />
                                 )}
                               </div>
-
-                              {item.title && (
-                                <div className="text-center font-medium mb-2 mt-2 text-sm">
-                                  {item.title}
-                                  <br />
-                                  {item.subtitle}
-                                </div>
+                              {item.amount && (
+                                <span className="font-bold text-blue-400 text-sm">{item.amount}</span>
                               )}
+                            </div>
 
-                              <div className="text-center font-bold text-sm">{item.price}</div>
-                            </CardContent>
+                            {/* Título y subtítulo */}
+                            {(item.title || item.subtitle) && (
+                              <div className="text-center text-sm text-white font-medium ">
+                                {item.title && <div className="text-base font-semibold">{item.title}</div>}
+                                {item.subtitle && <div className="text-xs text-gray-300">{item.subtitle}</div>}
+                              </div>
+                            )}
 
-
+                            {/* Precio */}
+                            <div className="text-center font-bold text-orange-400 text-base">{item.price}</div>
+                          </CardContent>
                           </Card>
                         </CarouselItem>
                       ))}

@@ -12,24 +12,24 @@ export const gameData: Record<string, GameWithDescription > = {
     items:"/sdeepmone.svg",
     productos: {
     diamantes: [
-      { amount: "100 (+10)", price: "Q11.50" },
-      { amount: "200 (+20)", price: "Q23.00" },
-      { amount: "310 (+31)", price: "Q33.00" },
-      { amount: "520 (+52)", price: "Q54.00" },
-      { amount: "620 (+62)", price: "Q65.00" },
-      { amount: "830 (+80)", price: "Q85.00" },
-      { amount: "1060 (+106)", price: "Q104.00" },
-      { amount: "2180 (+218)", price: "Q202.00" },
-      { amount: "3240 (+324)", price: "Q300.00" },
-      { amount: "4360 (+436)", price: "Q392.00" },
-      { amount: "5600 (+560)", price: "Q462.00" },
-      { amount: "11200 (+1120)", price: "Q910.00" }
+      { amount: "100 (+10)", price: "Q11.50", image: "/DiamantesFree.webp" },
+      { amount: "200 (+20)", price: "Q23.00", image: "/DiamantesFree.webp" },
+      { amount: "310 (+31)", price: "Q33.00", image: "/DiamantesFree.webp" },
+      { amount: "520 (+52)", price: "Q54.00", image: "/DiamantesFree.webp" },
+      { amount: "620 (+62)", price: "Q65.00", image: "/DiamantesFree.webp" },
+      { amount: "830 (+80)", price: "Q85.00", image: "/DiamantesFree.webp" },
+      { amount: "1060 (+106)", price: "Q104.00", image: "/DiamantesFree.webp" },
+      { amount: "2180 (+218)", price: "Q202.00", image: "/DiamantesFree.webp" },
+      { amount: "3240 (+324)", price: "Q300.00", image: "/DiamantesFree.webp" },
+      { amount: "4360 (+436)", price: "Q392.00", image: "/DiamantesFree.webp" },
+      { amount: "5600 (+560)", price: "Q462.00", image: "/DiamantesFree.webp" },
+      { amount: "11200 (+1120)", price: "Q910.00", image: "/DiamantesFree.webp" }
     ],
   
     tarjetas: [
-      { title: "Semanal 10 Diamantes", subtitle: "Inst. + 10/día (7 días)", price: "Q6.00" },
-      { title: "Semanal Plus 60 Diamantes", subtitle: "Inst. + 40/día (7 días)", price: "Q22.00" },
-      { title: "Mensual 300 Diamantes", subtitle: "Inst. + 50/día (30 días)", price: "Q104.00" }
+      { title: "Semanal 10 Diamantes", subtitle: "Inst. + 10/día (7 días)", price: "Q6.00", image: "/Semanal_Free.webp" },
+      { title: "Semanal Plus 60 Diamantes", subtitle: "Inst. + 40/día (7 días)", price: "Q22.00", image: "/SemanalFreePlus.webp" },
+      { title: "Mensual 300 Diamantes", subtitle: "Inst. + 50/día (30 días)", price: "Q104.00", image: "/MensualFreeFire.webp" }
     ],
   }
   },
@@ -38,18 +38,18 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga diamantes y obtén pases semanales en Mobile Legends. Mejora tu experiencia MOBA.",
     productos: {
     diamantes: [
-      { amount: "172", price: "Q32.63", image: "/sdeepmone.svg" },
-      { amount: "280", price: "Q54.00", image: "/sdeepmone.svg" },
-      { amount: "344", price: "Q63.00", image: "/sdeepmone.svg" },
-      { amount: "570", price: "Q105.00", image: "/sdeepmone.svg" },
-      { amount: "792", price: "Q139.00", image: "/sdeepmone.svg" },
-      { amount: "964", price: "Q167.00", image: "/sdeepmone.svg" },
-      { amount: "1050", price: "Q184.00", image: "/sdeepmone.svg" },
-      { amount: "1756", price: "Q299.00", image: "/sdeepmone.svg" },
-      { amount: "2711", price: "Q431.00", image: "/sdeepmone.svg" },
-      { amount: "3688", price: "Q567.00", image: "/sdeepmone.svg" },
-      { amount: "5532", price: "Q821.00", image: "/sdeepmone.svg" },
-      { amount: "9288", price: "Q1,358.00", image: "/sdeepmone.svg" }
+      { amount: "172", price: "Q32.63", image: "/DiamantesFree.webp" },
+      { amount: "280", price: "Q54.00", image: "/DiamantesFree.webp" },
+      { amount: "344", price: "Q63.00", image: "/DiamantesFree.webp" },
+      { amount: "570", price: "Q105.00", image: "/DiamantesFree.webp" },
+      { amount: "792", price: "Q139.00", image: "/DiamantesFree.webp" },
+      { amount: "964", price: "Q167.00", image: "/DiamantesFree.webp" },
+      { amount: "1050", price: "Q184.00", image: "/DiamantesFree.webp" },
+      { amount: "1756", price: "Q299.00", image: "/DiamantesFree.webp" },
+      { amount: "2711", price: "Q431.00", image: "/DiamantesFree.webp" },
+      { amount: "3688", price: "Q567.00", image: "/DiamantesFree.webp" },
+      { amount: "5532", price: "Q821.00", image: "/DiamantesFree.webp" },
+      { amount: "9288", price: "Q1,358.00", image: "/DiamantesFree.webp" }
     ],
     pase: [
       { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05", image: "/sdeepmone.svg" },
@@ -67,13 +67,13 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Consigue tokens y pases especiales para dominar en Honor of Kings con tus héroes favoritos.",
     productos: {
     tokens: [
-      { amount: "80 (+8)", price: "Q11.00", image: "/sdeepmone.svg" },
-      { amount: "240 (+17)", price: "Q34.00", image: "/sdeepmone.svg" },
-      { amount: "400 (+32)", price: "Q57.00", image: "/sdeepmone.svg" },
-      { amount: "560 (+45)", price: "Q77.00", image: "/sdeepmone.svg" },
-      { amount: "800 (+95)", price: "Q98.00", image: "/sdeepmone.svg" },
-      { amount: "1200 (+153)", price: "Q153.00", image: "/sdeepmone.svg" },
-      { amount: "2400 (+324)", price: "Q334.00", image: "/sdeepmone.svg" }
+      { amount: "80 (+8)", price: "Q11.00", image: "/TokensHonor.webp" },
+      { amount: "240 (+17)", price: "Q34.00", image: "/TokensHonor.webp" },
+      { amount: "400 (+32)", price: "Q57.00", image: "/TokensHonor.webp" },
+      { amount: "560 (+45)", price: "Q77.00", image: "/TokensHonor.webp" },
+      { amount: "800 (+95)", price: "Q98.00", image: "/TokensHonor.webp" },
+      { amount: "1200 (+153)", price: "Q153.00", image: "/TokensHonor.webp" },
+      { amount: "2400 (+324)", price: "Q334.00", image: "/TokensHonor.webp" }
     ],
     pase: [
       { title: "Pase Semanal Azul", price: "Q10.00", image: "/sdeepmone.svg" },
@@ -167,12 +167,12 @@ export const gameData: Record<string, GameWithDescription > = {
       { amount: "6820", price: "Q934.00", image: "/sdeepmone.svg" }
     ],
     pase: [
-      { title: "Avanzado", price: "Q49.00", image: "/sdeepmone.svg" },
-      { title: "Premium", price: "Q140.00", image: "/sdeepmone.svg" },
+      { title: "Avanzado", price: "Q49.00", image: "https://cdn.midasbuy.com/images/4.e1961726.jpg" },
+      { title: "Premium", price: "Q140.00", image: "https://cdn.midasbuy.com/images/5.9b436164.jpg" },
     ],
     maletin: [
-      { title: "Antibalas", price: "Q28.00", image: "/sdeepmone.svg" },
-      { title: "Compuesto", price: "Q82.00", image: "/sdeepmone.svg" },
+      { title: "Antibalas", price: "Q28.00", image: "https://cdn.midasbuy.com/images/3.081811d4.jpg" },
+      { title: "Compuesto", price: "Q82.00", image: "https://cdn.midasbuy.com/images/2.e24d4584.jpg" },
     ],
     otros: [
       { title: "Paquete Principiante", price: "Q9.00", image: "/sdeepmone.svg" },
