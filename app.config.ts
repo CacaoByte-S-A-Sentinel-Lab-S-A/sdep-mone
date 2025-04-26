@@ -30,8 +30,8 @@ const SdepMoneConfig: Configuration = {
     // },
   ],
 
-  username: "SdepMone",
-  sign: "Top 1 de los mejores precios",
+  username: "Contacto",
+  sign: "SdepMone",
   avatarUrl: "/sdepMone.png",
   socialLinks: [
     {
@@ -46,6 +46,10 @@ const SdepMoneConfig: Configuration = {
       icon: "mingcute:whatsapp-fill",
       link: "https://wa.me/50238349425",
     },
+    {
+      icon: "mingcute:mail-fill",
+      link: "mailto:", 
+    }
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
   maxSidebarTagChip: 12,

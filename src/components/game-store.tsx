@@ -96,7 +96,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                             <div className="flex flex-col items-center ">
                               <div className="w-auto h-35  flex items-center justify-center ">
                                 {item.image ? (
-                                  <img src={item.image} alt="Icono" className="w-auto h-35" />
+                                  <img src={item.image} alt="Icono" className="w-auto h-35 transition-transform duration-300 hover:scale-130 hover:rotate-1" />
                                 ) : (
                                   <div className="w-auto h-35" />
                                 )}
@@ -108,12 +108,11 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
 
                             {/* Título y subtítulo */}
                             {(item.title || item.subtitle) && (
-                              <div className="text-center text-sm text-white font-medium ">
+                              <div className="text-center text-sm text-[var(--text-color)] dark:text-[var(--text-color-dark)] font-medium">
                                 {item.title && <div className="text-base font-semibold">{item.title}</div>}
                                 {item.subtitle && <div className="text-xs text-gray-300">{item.subtitle}</div>}
                               </div>
                             )}
-
                             {/* Precio */}
                             <div className="text-center font-bold text-orange-400 text-base">{item.price}</div>
                           </CardContent>
