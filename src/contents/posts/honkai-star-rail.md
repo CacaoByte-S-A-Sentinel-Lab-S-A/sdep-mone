@@ -5,7 +5,7 @@ description: Consigue jade estelar y pases para mejorar tu equipo en Honkai Star
 tags: [Jade Estelar, Pase de Batalla]
 category: RPG por Turnos
 draft: false
-cover: https://blog.es.playstation.com/tachyon/sites/14/2024/01/4455b6da479710e396a2e009c2c4a0124aeb49c5-scaled.jpeg?resize=1088%2C612&crop_strategy=smart
+cover: Fondo_honkai_2.webp
 gameSlug: honkai-start-rail
 gameId: 1  
 ---
