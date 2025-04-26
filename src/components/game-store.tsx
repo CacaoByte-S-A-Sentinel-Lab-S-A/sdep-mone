@@ -13,6 +13,7 @@ interface Producto {
   title?: string
   subtitle?: string
   description?: string
+  image?: string
 }
 
 export interface JuegoProductos {
@@ -90,25 +91,32 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                               setSelectedIndex(index)
                             }}
                           >
-                            <CardContent className="p-4 flex flex-col items-center">
-                              {item.amount && (
-                                <div className="flex items-center text-blue-400 mb-2 mt-2">
-                                  {/* <Diamond className="fill-blue-400 stroke-blue-400 mr-2" size={20} /> */}
-                                  <img src={itemsGame} alt="Descripción de la imagen" />
-                                  <span className="font-bold">{item.amount}</span>
-                                  
+<CardContent className="p-4 flex flex-col items-center justify-center h-48">
+  <div className="flex flex-col items-center text-blue-400 mb-2 mt-2 h-16">
+    {item.amount ? (
+      <div className="flex flex-col items-center">
+        <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-1">
+          <img src={itemsGame} alt="Icono" className="w-6 h-6 object-contain" />
+        </div>
+        <span className="font-bold text-base">{item.amount}</span>
+      </div>
+    ) : (
+      <div className="w-12 h-12 mb-1" /> // espacio reservado
+    )}
+  </div>
 
-                                </div>
-                              )}
-                              {item.title && (
-                                <div className="text-center font-medium mb-2 mt-2">
-                                  {item.title}
-                                  <br />
-                                  {item.subtitle}
-                                </div>
-                              )}
-                              <div className="text-center font-bold">{item.price}</div>
-                            </CardContent>
+  {item.title && (
+    <div className="text-center font-medium mb-2 mt-2 text-sm">
+      {item.title}
+      <br />
+      {item.subtitle}
+    </div>
+  )}
+
+  <div className="text-center font-bold text-sm">{item.price}</div>
+</CardContent>
+
+
                           </Card>
                         </CarouselItem>
                       ))}

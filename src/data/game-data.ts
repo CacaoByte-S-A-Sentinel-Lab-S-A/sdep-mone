@@ -38,27 +38,27 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga diamantes y obtén pases semanales en Mobile Legends. Mejora tu experiencia MOBA.",
     productos: {
     diamantes: [
-      { amount: "172", price: "Q32.63" },
-      { amount: "280", price: "Q54.00" },
-      { amount: "344", price: "Q63.00" },
-      { amount: "570", price: "Q105.00" },
-      { amount: "792", price: "Q139.00" },
-      { amount: "964", price: "Q167.00" },
-      { amount: "1050", price: "Q184.00" },
-      { amount: "1756", price: "Q299.00" },
-      { amount: "2711", price: "Q431.00" },
-      { amount: "3688", price: "Q567.00" },
-      { amount: "5532", price: "Q821.00" },
-      { amount: "9288", price: "Q1,358.00" }
+      { amount: "172", price: "Q32.63", image: "/sdeepmone.svg" },
+      { amount: "280", price: "Q54.00", image: "/sdeepmone.svg" },
+      { amount: "344", price: "Q63.00", image: "/sdeepmone.svg" },
+      { amount: "570", price: "Q105.00", image: "/sdeepmone.svg" },
+      { amount: "792", price: "Q139.00", image: "/sdeepmone.svg" },
+      { amount: "964", price: "Q167.00", image: "/sdeepmone.svg" },
+      { amount: "1050", price: "Q184.00", image: "/sdeepmone.svg" },
+      { amount: "1756", price: "Q299.00", image: "/sdeepmone.svg" },
+      { amount: "2711", price: "Q431.00", image: "/sdeepmone.svg" },
+      { amount: "3688", price: "Q567.00", image: "/sdeepmone.svg" },
+      { amount: "5532", price: "Q821.00", image: "/sdeepmone.svg" },
+      { amount: "9288", price: "Q1,358.00", image: "/sdeepmone.svg" }
     ],
     pase: [
-      { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05" },
-      { title: "Doble Semanal", subtitle: "(160+20/día)", price: "Q47.00" },
-      { title: "Triple Semanal", subtitle: "(240+20/día)", price: "Q70.00" },
-      { title: "Mensual", subtitle: "(320+20/día)", price: "Q89.00" },
-      { title: "172 Diamantes + Semanal", price: "Q54.00" },
-      { title: "86 Diamantes + Doble Semanal", price: "Q60.00" },
-      { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00" }
+      { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05", image: "/sdeepmone.svg" },
+      { title: "Doble Semanal", subtitle: "(160+20/día)", price: "Q47.00", image: "/sdeepmone.svg" },
+      { title: "Triple Semanal", subtitle: "(240+20/día)", price: "Q70.00", image: "/sdeepmone.svg" },
+      { title: "Mensual", subtitle: "(320+20/día)", price: "Q89.00", image: "/sdeepmone.svg" },
+      { title: "172 Diamantes + Semanal", price: "Q54.00", image: "/sdeepmone.svg" },
+      { title: "86 Diamantes + Doble Semanal", price: "Q60.00", image: "/sdeepmone.svg" },
+      { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00", image: "/sdeepmone.svg" }
     ]
   }
   },
@@ -112,7 +112,7 @@ export const gameData: Record<string, GameWithDescription > = {
       { amount: "2240", price: "Q319.00" },
       { amount: "3880", price: "Q485.00" },
       { amount: "8080", price: "Q954.00" },
-      { title: "Expreso", price: "Q47.00" }
+      { amount: "Expreso", price: "Q47.00" }
     ]
   }
   },
@@ -145,7 +145,7 @@ export const gameData: Record<string, GameWithDescription > = {
       { amount: "1980 (+260)", price: "Q303.00" },
       { amount: "3280 (+600)", price: "Q457.00" },
       { amount: "6480 (+1600)", price: "Q900.00" },
-      { title: "Subscripción Proxy 30D", price: "Q47.00" }
+      { amount: "Subscripción Proxy 30D", price: "Q47.00" }
     ]
   }
   },
