@@ -121,16 +121,16 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga oro y desbloquea pases exclusivos en Blood Strike. Acción intensa sin límites.",
     productos: {
     golds: [
-      { amount: "105", price: "Q10.00", image: "/sdeepmone.svg" },
-      { amount: "320", price: "Q29.00", image: "/sdeepmone.svg" },
-      { amount: "540", price: "Q46.00", image: "/sdeepmone.svg" },
-      { amount: "1100", price: "Q89.00", image: "/sdeepmone.svg" },
-      { amount: "2260", price: "Q171.00", image: "/sdeepmone.svg" },
-      { amount: "5800", price: "Q429.00", image: "/sdeepmone.svg" }
+      { amount: "105", price: "Q10.00", image: "/Golds.webp" },
+      { amount: "320", price: "Q29.00", image: "/Golds.webp" },
+      { amount: "540", price: "Q46.00", image: "/Golds.webp" },
+      { amount: "1100", price: "Q89.00", image: "/Golds.webp" },
+      { amount: "2260", price: "Q171.00", image: "/Golds.webp" },
+      { amount: "5800", price: "Q429.00", image: "/Golds.webp" }
     ],
     pase: [
-      { title: "Elite", price: "Q41.00", image: "/sdeepmone.svg" },
-      { title: "Elite Plus", price: "Q94.00", image: "/sdeepmone.svg" }
+      { title: "Elite", price: "Q41.00", image: "/bloodStrikePaseElite.webp" },
+      { title: "Elite Plus", price: "Q94.00", image: "/bloodStrikePasePlus.webp" }
     ]
   }
   },
@@ -139,13 +139,13 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Consigue monocromos y la suscripción Proxy en Zenless Zone Zero. Prepárate para el combate urbano.",
     productos: {
     monocromos: [
-      { amount: "60", price: "Q11.00", image: "/sdeepmone.svg" },
-      { amount: "300 (+30)", price: "Q50.00", image: "/sdeepmone.svg" },
-      { amount: "980 (+110)", price: "Q145.00", image: "/sdeepmone.svg" },
-      { amount: "1980 (+260)", price: "Q303.00", image: "/sdeepmone.svg" },
-      { amount: "3280 (+600)", price: "Q457.00", image: "/sdeepmone.svg" },
-      { amount: "6480 (+1600)", price: "Q900.00", image: "/sdeepmone.svg" },
-      { amount: "Subscripción Proxy 30D", price: "Q47.00", image: "/sdeepmone.svg" }
+      { amount: "60", price: "Q11.00", image: "/monocromos.webp" },
+      { amount: "300 (+30)", price: "Q50.00", image: "/monocromos.webp" },
+      { amount: "980 (+110)", price: "Q145.00", image: "/monocromos.webp" },
+      { amount: "1980 (+260)", price: "Q303.00", image: "/monocromos.webp" },
+      { amount: "3280 (+600)", price: "Q457.00", image: "/monocromos.webp" },
+      { amount: "6480 (+1600)", price: "Q900.00", image: "/monocromos.webp" },
+      { amount: "Subscripción Proxy 30D", price: "Q47.00", image: "/monocromos.webp" }
     ]
   }
   },
@@ -154,29 +154,29 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Equípate con bonos, pases y maletines en Arena Breakout. ¡Prepárate para sobrevivir!",
     productos: {
     bonds: [
-      { amount: "220", price: "Q21.00", image: "/sdeepmone.svg" },
-      { amount: "330", price: "Q32.00", image: "/sdeepmone.svg" },
-      { amount: "880", price: "Q83.00", image: "/sdeepmone.svg" },
-      { amount: "2240", price: "Q204.00", image: "/sdeepmone.svg" },
-      { amount: "4700", price: "Q374.00", image: "/sdeepmone.svg" },
-      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
-      { amount: "335", price: "Q51.00", image: "/sdeepmone.svg" },
-      { amount: "675", price: "Q99.00", image: "/sdeepmone.svg" },
-      { amount: "1690", price: "Q243.00", image: "/sdeepmone.svg" },
-      { amount: "3400", price: "Q450.00", image: "/sdeepmone.svg" },
-      { amount: "6820", price: "Q934.00", image: "/sdeepmone.svg" }
+      { amount: "220", price: "Q21.00", image: "/bonds.webp" },
+      { amount: "330", price: "Q32.00", image: "/bonds.webp" },
+      { amount: "880", price: "Q83.00", image: "/bonds.webp" },
+      { amount: "2240", price: "Q204.00", image: "/bonds.webp" },
+      { amount: "4700", price: "Q374.00", image: "/bonds.webp" },
+      { amount: "60", price: "Q10.00", image: "/bonds.webp" },
+      { amount: "335", price: "Q51.00", image: "/bonds.webp" },
+      { amount: "675", price: "Q99.00", image: "/bonds.webp" },
+      { amount: "1690", price: "Q243.00", image: "/bonds.webp" },
+      { amount: "3400", price: "Q450.00", image: "/bonds.webp" },
+      { amount: "6820", price: "Q934.00", image: "/bonds.webp" }
     ],
     pase: [
-      { title: "Avanzado", price: "Q49.00", image: "https://cdn.midasbuy.com/images/4.e1961726.jpg" },
-      { title: "Premium", price: "Q140.00", image: "https://cdn.midasbuy.com/images/5.9b436164.jpg" },
+      { title: "Avanzado", price: "Q49.00", image: "/PaseAvances.webp" },
+      { title: "Premium", price: "Q140.00", image: "/PasePremium.webp" },
     ],
     maletin: [
-      { title: "Antibalas", price: "Q28.00", image: "https://cdn.midasbuy.com/images/3.081811d4.jpg" },
-      { title: "Compuesto", price: "Q82.00", image: "https://cdn.midasbuy.com/images/2.e24d4584.jpg" },
+      { title: "Antibalas", price: "Q28.00", image: "/MaletinAntibalas.webp" },
+      { title: "Compuesto", price: "Q82.00", image: "/MaletinCompuesto.webp" },
     ],
     otros: [
-      { title: "Paquete Principiante", price: "Q9.00", image: "/sdeepmone.svg" },
-      { title: "Elite De Prueba", price: "Q47.00", image: "/sdeepmone.svg" }
+      { title: "Paquete Principiante", price: "Q9.00", image: "/ArenaBreakoutOtros.webp" },
+      { title: "Elite De Prueba", price: "Q47.00", image: "/ArenaBreakoutOtros.webp" }
     ]
   }
   },
@@ -199,11 +199,11 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Obtén diamantes para Farlight y lleva tus batallas futuristas al siguiente nivel.",
     productos: {
     Diamantes: [
-      { amount: "220", price: "Q21.00", image: "/sdeepmone.svg" },
-      { amount: "330", price: "Q32.00", image: "/sdeepmone.svg" },
-      { amount: "880", price: "Q83.00", image: "/sdeepmone.svg" },
-      { amount: "2240", price: "Q204.00", image: "/sdeepmone.svg" },
-      { amount: "4700", price: "Q374.00", image: "/sdeepmone.svg" },
+      { amount: "220", price: "Q21.00", image: "/DiamantesFree.webp" },
+      { amount: "330", price: "Q32.00", image: "/DiamantesFree.webp" },
+      { amount: "880", price: "Q83.00", image: "/DiamantesFree.webp" },
+      { amount: "2240", price: "Q204.00", image: "/DiamantesFree.webp" },
+      { amount: "4700", price: "Q374.00", image: "/DiamantesFree.webp" },
     ]
   }
 }
