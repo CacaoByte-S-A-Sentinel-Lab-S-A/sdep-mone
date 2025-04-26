@@ -52,13 +52,13 @@ export const gameData: Record<string, GameWithDescription > = {
       { amount: "9288", price: "Q1,358.00", image: "/DiamantesFree.webp" }
     ],
     pase: [
-      { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05", image: "/sdeepmone.svg" },
-      { title: "Doble Semanal", subtitle: "(160+20/día)", price: "Q47.00", image: "/sdeepmone.svg" },
-      { title: "Triple Semanal", subtitle: "(240+20/día)", price: "Q70.00", image: "/sdeepmone.svg" },
-      { title: "Mensual", subtitle: "(320+20/día)", price: "Q89.00", image: "/sdeepmone.svg" },
-      { title: "172 Diamantes + Semanal", price: "Q54.00", image: "/sdeepmone.svg" },
-      { title: "86 Diamantes + Doble Semanal", price: "Q60.00", image: "/sdeepmone.svg" },
-      { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00", image: "/sdeepmone.svg" }
+      { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05", image: "/MobileLegendsSemanal.webp" },
+      { title: "Doble Semanal", subtitle: "(160+20/día)", price: "Q47.00", image: "/MobileLegendsSemanal.webp" },
+      { title: "Triple Semanal", subtitle: "(240+20/día)", price: "Q70.00", image: "/MobileLegendsSemanal.webp" },
+      { title: "Mensual", subtitle: "(320+20/día)", price: "Q89.00", image: "/MobileLegendsSemanal.webp" },
+      { title: "172 Diamantes + Semanal", price: "Q54.00", image: "/MobileLegendsSemanal.webp" },
+      { title: "86 Diamantes + Doble Semanal", price: "Q60.00", image: "/MobileLegendsSemanal.webp" },
+      { title: "Crepuscular", subtitle: "(Skin + Recompensas)", price: "Q106.00", image: "/MobileLegendsSemanal.webp" }
     ]
   }
   },
@@ -76,8 +76,8 @@ export const gameData: Record<string, GameWithDescription > = {
       { amount: "2400 (+324)", price: "Q334.00", image: "/TokensHonor.webp" }
     ],
     pase: [
-      { title: "Pase Semanal Azul", price: "Q10.00", image: "/sdeepmone.svg" },
-      { title: "Pase Semanal Plus Amarillo", price: "Q31.00", image: "/sdeepmone.svg" }
+      { title: "Pase Semanal Azul", price: "Q10.00", image: "/HonorKingsTarjetaSemanal.webp" },
+      { title: "Pase Semanal Plus Amarillo", price: "Q31.00", image: "/HonorKingsTarjetaSemanalPlus.webp" }
     ]
   }
   },
@@ -86,18 +86,18 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga cristales y obtén bendiciones en Genshin Impact. Explora Teyvat al máximo.",
     productos: {
     "cristales-genesis": [
-      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
-      { amount: "300 (+30)", price: "Q51.00", image: "/sdeepmone.svg" },
-      { amount: "980 + 110", price: "Q149.00", image: "/sdeepmone.svg" },
-      { amount: "1980 + 260", price: "Q319.00", image: "/sdeepmone.svg" },
-      { amount: "3280 (+600)", price: "Q485.00", image: "/sdeepmone.svg" },
-      { amount: "6480 (+1600)", price: "Q954.00", image: "/sdeepmone.svg" }
+      { amount: "60", price: "Q10.00", image: "/genshinImpactCristales.webp" },
+      { amount: "300 (+30)", price: "Q51.00", image: "/genshinImpactCristales.webp" },
+      { amount: "980 + 110", price: "Q149.00", image: "/genshinImpactCristales.webp" },
+      { amount: "1980 + 260", price: "Q319.00", image: "/genshinImpactCristales.webp" },
+      { amount: "3280 (+600)", price: "Q485.00", image: "/genshinImpactCristales.webp" },
+      { amount: "6480 (+1600)", price: "Q954.00", image: "/genshinImpactCristales.webp" }
     ],
     "bendicion": [
-      { title: "Lunar x1 (30 días)", subtitle: "300 Cristales + 90 protogemas/día", price: "Q54.00", image: "/sdeepmone.svg" },
-      { title: "Lunar x2 (60 días)", subtitle: "600 Cristales + 90 protogemas/día", price: "Q107.00", image: "/sdeepmone.svg" },
-      { title: "Lunar x3 (90 días)", subtitle: "900 Cristales + 90 protogemas/día", price: "Q158.00", image: "/sdeepmone.svg" },
-      { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00", image: "/sdeepmone.svg" }
+      { title: "Lunar x1 (30 días)", subtitle: "300 Cristales + 90 protogemas/día", price: "Q54.00", image: "/BendicionLunar.webp" },
+      { title: "Lunar x2 (60 días)", subtitle: "600 Cristales + 90 protogemas/día", price: "Q107.00", image: "/BendicionLunar.webp" },
+      { title: "Lunar x3 (90 días)", subtitle: "900 Cristales + 90 protogemas/día", price: "Q158.00", image: "/BendicionLunar.webp" },
+      { title: "Lunar x4 (120 días)", subtitle: "1200 Cristales + 90 protogemas/día", price: "Q208.00", image: "/BendicionLunar.webp" }
     ]
   }
   },
@@ -106,13 +106,13 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Compra cristales y el pase Expreso para avanzar rápidamente en Honkai: Star Rail.",
     productos: {
     cristales: [
-      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
-      { amount: "330", price: "Q51.00", image: "/sdeepmone.svg" },
-      { amount: "1090", price: "Q149.00", image: "/sdeepmone.svg" },
-      { amount: "2240", price: "Q319.00", image: "/sdeepmone.svg" },
-      { amount: "3880", price: "Q485.00", image: "/sdeepmone.svg" },
-      { amount: "8080", price: "Q954.00", image: "/sdeepmone.svg" },
-      { amount: "Expreso", price: "Q47.00", image: "/sdeepmone.svg" }
+      { amount: "60", price: "Q10.00", image: "/CristalesHonkai.webp" },
+      { amount: "330", price: "Q51.00", image: "/CristalesHonkai.webp" },
+      { amount: "1090", price: "Q149.00", image: "/CristalesHonkai.webp" },
+      { amount: "2240", price: "Q319.00", image: "/CristalesHonkai.webp" },
+      { amount: "3880", price: "Q485.00", image: "/CristalesHonkai.webp" },
+      { amount: "8080", price: "Q954.00", image: "/CristalesHonkai.webp" },
+      { amount: "Expreso", price: "Q47.00", image: "/CristalesHonkai.webp" }
     ]
   }
   },
@@ -185,12 +185,12 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Recarga UC en PUBG Mobile para comprar skins, pases y más. ¡Juega como un pro!",
     productos: {
     uc: [
-      { amount: "60", price: "Q10.00", image: "/sdeepmone.svg" },
-      { amount: "325 (+25)", price: "Q50.00", image: "/sdeepmone.svg" },
-      { amount: "660 (+60)", price: "Q97.00", image: "/sdeepmone.svg" },
-      { amount: "1800 (+300)", price: "Q238.00", image: "/sdeepmone.svg" },
-      { amount: "3850 (+850)", price: "Q470.00", image: "/sdeepmone.svg" },
-      { amount: "8110 (+2100)", price: "Q926.00", image: "/sdeepmone.svg" }
+      { amount: "60", price: "Q10.00", image: "/Uc.webp" },
+      { amount: "325 (+25)", price: "Q50.00", image: "/Uc.webp" },
+      { amount: "660 (+60)", price: "Q97.00", image: "/Uc.webp" },
+      { amount: "1800 (+300)", price: "Q238.00", image: "/Uc.webp" },
+      { amount: "3850 (+850)", price: "Q470.00", image: "/Uc.webp" },
+      { amount: "8110 (+2100)", price: "Q926.00", image: "/Uc.webp" }
     ]
   }
   },
