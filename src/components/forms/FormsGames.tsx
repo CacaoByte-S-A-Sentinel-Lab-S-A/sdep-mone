@@ -65,11 +65,23 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       const monedas = values.name_2435070634;
       const idCuenta = values.name_9680451077;
       const region = values.name_5232852522;
-      const servidor = values.name_4833852072; // <-- Nuevo
+      const servidor = values.name_4833852072;
   
-      const mensaje = `¡Hola SdeepMone! 👋\n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n- ID de cuenta: ${idCuenta}\n- Región: ${region}\n- Servidor: ${servidor}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! 🙌`;
+      let detallesCuenta = `- ID de cuenta: ${idCuenta}`;
   
-      const numeroWhatsApp = "50238349425"; 
+      // Solo agregamos Región si el juego necesita Región
+      if (["zenless-zone-zero", "honkai-start-rail", "genshin-impact"].includes(gameName)) {
+        detallesCuenta += `\n- Región: ${region}`;
+      }
+  
+      // Solo agregamos Servidor si el juego necesita Servidor
+      if (gameName === "mobile-legends") {
+        detallesCuenta += `\n- Servidor: ${servidor}`;
+      }
+  
+      const mensaje = `¡Hola SdeepMone! 👋\n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n${detallesCuenta}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! 🙌`;
+  
+      const numeroWhatsApp = "50253326756"; 
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   
       window.open(url, "_blank");
@@ -87,26 +99,34 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 max-w-3xl mx-auto py-10">
 
       {FormsGames.map((field) => {
-          // Lógica para ocultar campos según el juego seleccionado
-          if (field.name === "name_5232852522" && 
-              !["zenless-zone-zero", "honkai-start-rail", "genshin-impact"].includes(gameName)) {
-            return null;
-          }
+            // Ocultar campos según juego seleccionado
+            if (field.name === "name_5232852522" && 
+                !["zenless-zone-zero", "honkai-start-rail", "genshin-impact"].includes(gameName)) {
+              return null;
+            }
 
-          if (field.name === "name_4833852072" && 
-              gameName !== "mobile-legends") {
-            return null;
-          }
+            if (field.name === "name_4833852072" && 
+                gameName !== "mobile-legends") {
+              return null;
+            }
 
-          return (
-            <FormField
-              key={field.name}
-              control={form.control}
-              name={field.name as FormFields}
-              render={({ field: innerField }) => (
-                <FormItem
-                  className={field.variant === "Checkbox" ? "flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4" : ""}
+            return (
+              <FormField
+                key={field.name}
+                control={form.control}
+                name={field.name as FormFields}
+                render={({ field: innerField }) => (
+                  <FormItem
+                  className={field.variant === "Checkbox" ? "flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4" : "space-y-2"}
+                  style={field.name === "name_1110064419" ? { display: "none" } : {}}
                 >
+                  {field.variant !== "Checkbox" && field.name !== "name_1110064419" && (
+                    <>
+                      <FormLabel>{field.label}</FormLabel>
+                      <FormDescription>{field.description}</FormDescription>
+                    </>
+                  )}
+                
                   <FormControl>
                     {field.variant === "Input" ? (
                       <Input
@@ -117,28 +137,29 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
                         onChange={innerField.onChange}
                         readOnly={
                           field.name === "name_1110064419" || field.name === "name_2435070634"
-                        } 
+                        }
                       />
                     ) : field.variant === "Checkbox" ? (
-                      <Checkbox
-                        checked={innerField.value === true}
-                        onCheckedChange={(checked) => innerField.onChange(checked)}
-                      />
+                      <div className="flex items-start space-x-2">
+                        <Checkbox
+                          checked={innerField.value === true}
+                          onCheckedChange={(checked) => innerField.onChange(checked)}
+                        />
+                        <div className="space-y-1 leading-none">
+                          <FormLabel className="font-medium">{field.label}</FormLabel>
+                          <FormDescription>{field.description}</FormDescription>
+                        </div>
+                      </div>
                     ) : null}
                   </FormControl>
-
-                  <div className={field.variant === "Checkbox" ? "space-y-1 leading-none" : ""}>
-                    <FormLabel>{field.label}</FormLabel>
-                    <FormDescription>{field.description}</FormDescription>
-                  </div>
+                
                   <FormMessage />
                 </FormItem>
-              )}
-            />
-          );
-        })}
-
-
+                
+                )}
+              />
+            );
+          })}
 
         <Button type="submit">Submit</Button>
       </form>
