@@ -27,7 +27,7 @@ interface GameWithDescription {
 
 interface GameStoreProps {
   game: string
-  gameData: Record<string, { description?: string; items?: string, productos: JuegoProductos }>;
+  gameData: Record<string, { description?: string; items?: string, productos: JuegoProductos; title?: string }>;
 }
 
 export default function GameStore({ game, gameData }: GameStoreProps) {
@@ -35,7 +35,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [confirmedProduct, setConfirmedProduct] = useState<Producto | null>(null);
 
-  const { productos: currentProductos = {}, description: gameDescription, items: itemsGame  } = gameData[game] || {};
+  const { productos: currentProductos = {}, title: titlegame, description: gameDescription, items: itemsGame  } = gameData[game] || {};
 
   const currentGame = gameData[game] || {}
   const selectedProduct = selectedCategoria && selectedIndex !== null
@@ -55,6 +55,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
   return (
     <div>
     <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)]  lg:p-6">
+      <div className="text-3xl font-bold text-primary mb-3 pb-3">{titlegame}</div>
       <div>
         <h2 className="text-xl font-bold text-primary mb-3">Descripcion del juego</h2>
         {gameDescription && (
