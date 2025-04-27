@@ -28,7 +28,7 @@ if (Array.isArray(bannerImage) && bannerImage.length > 0) {
 const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
 ---
 
-<div id="banner" class="banner onload-animation-fade-in">
+<div id="banner" class="banner onload-animation-fade-in h-full w-full">
   <div class="transition-main banner-inner h-full w-full">
 
     {
@@ -47,7 +47,7 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
       ) : (
         <div class="cover">
       <img
-          class="item lozad object-contain object-top w-full max-h-[500px]"
+          class="item lozad object-contain object-top w-full max-h-[1500px]"
           data-src={typeof bannerImage === "string" ? bannerImage : GetCoverURLForUnspecifiedEntry(slug ?? "")}
           alt="PostCover"
         />
