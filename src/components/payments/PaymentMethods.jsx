@@ -22,7 +22,7 @@ const CopyField = ({ label, value }) => {
       <p className="text-sm font-semibold text-primary mb-2">{label}</p>
       <div className="flex items-center gap-3">
         <Input value={value} readOnly className="bg-muted cursor-text" />
-        <Button variant="outline" size="icon" onClick={handleCopy}>
+        <Button className="border-input bg-muted dark:bg-input/30" variant="outline" size="icon" onClick={handleCopy}>
           <Copy size={18} />
         </Button>
         {copied && <span className="text-green-500 text-xs">¡Copiado!</span>}
@@ -34,8 +34,8 @@ const CopyField = ({ label, value }) => {
 const PaymentMethods = () => {
   return (
     <div className="w-full max-w-5xl mx-auto mt-12">
-      <Card className="bg-[var(--card-color)] text-[var(--text-color)] border-none shadow-2xl rounded-3xl overflow-hidden">
-        <CardContent className="p-8 md:p-12">
+      <Card className="archives bg-[var(--card-color)] text-[var(--text-color)] border-none rounded-3xl shadow-none overflow-hidden">
+        <CardContent className="p-0">
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 text-center">
             Pago Fácil y Seguro
           </h2>
@@ -44,13 +44,13 @@ const PaymentMethods = () => {
           </p>
 
           {/* Opciones de pago */}
-          <div className="flex flex-col ">
+          <div className="flex flex-col gap-4">
             {/* Banco Industrial */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <img
                 src="/BancoBi.webp"
                 alt="Banco Industrial"
-                className="w-48 h-48 object-contain"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
               />
               <div className="flex-1 w-full">
                 <CopyField label="Banco Industrial (Ahorro)" value="1248509" />
@@ -62,7 +62,7 @@ const PaymentMethods = () => {
               <img
                 src="/Transferenciaterceros.webp"
                 alt="Cuenta de Terceros"
-                className="w-48 h-48 object-contain"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
               />
               <div className="flex-1 w-full">
                 <CopyField label="Cuenta de Terceros - Banco Industrial" value="1248509" />
@@ -74,7 +74,7 @@ const PaymentMethods = () => {
               <img
                 src="/Zigi.webp"
                 alt="Transferencias a Zigi"
-                className="w-48 h-48 object-contain"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
               />
               <div className="flex-1 w-full">
                 <CopyField label="Zigi" value="38408010" />
@@ -86,7 +86,7 @@ const PaymentMethods = () => {
           <img
                 src="/Beneficiario.webp"
                 alt="Transferencias a Zigi"
-                className="w-48 h-48 object-contain"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
               />
             <div className="flex-1 w-full">
               <CopyField label="Beneficiario" value="Marvin Emilio Moran Xona" />
