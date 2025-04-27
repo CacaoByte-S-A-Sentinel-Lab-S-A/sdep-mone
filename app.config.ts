@@ -63,7 +63,7 @@ const SdepMoneConfig: Configuration = {
     "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg", // Honor of Kings
     "/Fondo_honkai_2.webp", // Honkai Star Rail    
     "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg", // Free Fire
-    "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg", // Blood Strike
+    "/blood.webp", // Blood Strike
     "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg", // Zenless Zone Zero
     "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg", // Arena Breakout
     "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg", // Farlight 84
@@ -77,7 +77,7 @@ const SdepMoneConfig: Configuration = {
     "honor-kings": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg",
     "free-fire": "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
     "honkai-start-rail": "/Fondo_honkai_2.webp",
-    "blood-strike": "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg",
+    "blood-strike": "/blood.webp",
     "zenless-zone-zero": "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
     "arena-breakout": "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
     "farlight": "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg",
