@@ -46,11 +46,13 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
         </div>
       ) : (
         <div class="cover">
-          <img
-            class="item lozad"
-            data-src={typeof bannerImage === "string" ? bannerImage : GetCoverURLForUnspecifiedEntry(slug ?? "")}
-            alt="PostCover"
-          />
+      <img
+          class="item lozad object-contain object-top w-full max-h-[500px]"
+          data-src={typeof bannerImage === "string" ? bannerImage : GetCoverURLForUnspecifiedEntry(slug ?? "")}
+          alt="PostCover"
+        />
+
+
         </div>
       )
     }
