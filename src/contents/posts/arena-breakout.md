@@ -5,7 +5,7 @@ description: Compra créditos y mejora tu equipo en Arena Breakout, el shooter t
 tags: [Créditos, Equipamiento]
 category: Shooter Táctico
 draft: false
-cover: https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg
+cover: arenab.webp
 gameSlug: arena-breakout 
 gameId: 1 
 titleGame: "prueba"
