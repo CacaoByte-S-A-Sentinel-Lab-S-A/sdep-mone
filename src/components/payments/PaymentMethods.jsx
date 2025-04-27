@@ -18,14 +18,14 @@ const CopyField = ({ label, value }) => {
   };
 
   return (
-    <div className="mb-4">
-      <p className="text-sm text-muted-foreground mb-1 font-medium">{label}</p>
-      <div className="flex items-center space-x-2">
+    <div className="mb-6">
+      <p className="text-sm font-semibold text-primary mb-2">{label}</p>
+      <div className="flex items-center gap-3">
         <Input value={value} readOnly className="bg-muted cursor-text" />
-        <Button variant="outline" size="icon" onClick={handleCopy}>
+        <Button className="border-input bg-muted dark:bg-input/30" variant="outline" size="icon" onClick={handleCopy}>
           <Copy size={18} />
         </Button>
-        {copied && <span className="text-green-500 text-xs">Copiado</span>}
+        {copied && <span className="text-green-500 text-xs">¡Copiado!</span>}
       </div>
     </div>
   );
@@ -33,33 +33,73 @@ const CopyField = ({ label, value }) => {
 
 const PaymentMethods = () => {
   return (
-    <div className="w-full max-w-5xl mx-auto mt-10">
-      <Card className="bg-[var(--card-color)] text-[var(--text-color)] border-none shadow-lg rounded-3xl overflow-hidden">
-        <CardContent className="p-6 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
+    <div className="w-full max-w-5xl mx-auto mt-12">
+      <Card className="archives bg-[var(--card-color)] text-[var(--text-color)] border-none rounded-3xl shadow-none overflow-hidden">
+        <CardContent className="p-0">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 text-center">
             Pago Fácil y Seguro
           </h2>
-          <p className="text-[var(--text-color-lighten)] mb-6 text-sm md:text-base">
-            Ofrecemos diversas opciones para que puedas elegir la forma que más te convenga:
+          <p className="text-center text-[var(--text-color-lighten)] text-base md:text-lg mb-10">
+            Elige la opción que mejor se adapte a tus necesidades y procede de manera rápida y segura:
           </p>
-          <div className="flex justify-center mb-6">
-            <img
-              src="/payments.png"
-              alt="Métodos de pago: depósito bancario, transferencias, Zigi"
-              className="rounded-xl shadow-md w-full max-w-2xl object-contain"
-            />
-          </div>
 
-         
-          {/* Campos de pago */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <CopyField label="Zigi" value="38408010" />
-            <CopyField label="Banco Industrial (Ahorro)" value="1248509" />
-            <div className="md:col-span-2 flex justify-center">
-              <div className="w-full md:w-1/2">
-                <CopyField label="Beneficiario" value="Marvin Emilio Moran Xona" />
+          {/* Opciones de pago */}
+          <div className="flex flex-col gap-4">
+            {/* Banco Industrial */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <img
+                src="/BancoBi.webp"
+                alt="Banco Industrial"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
+              />
+              <div className="flex-1 w-full">
+                <CopyField label="Banco Industrial (Ahorro)" value="1248509" />
               </div>
             </div>
+
+            {/* Transferencia a terceros */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <img
+                src="/Transferenciaterceros.webp"
+                alt="Cuenta de Terceros"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
+              />
+              <div className="flex-1 w-full">
+                <CopyField label="Cuenta de Terceros - Banco Industrial" value="1248509" />
+              </div>
+            </div>
+
+            {/* Zigi */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <img
+                src="/Zigi.webp"
+                alt="Transferencias a Zigi"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
+              />
+              <div className="flex-1 w-full">
+                <CopyField label="Zigi" value="38408010" />
+              </div>
+            </div>
+
+          {/* Beneficiario */}
+          <div className="flex flex-col md:flex-row items-center gap-8">
+          <img
+                src="/Beneficiario.webp"
+                alt="Transferencias a Zigi"
+                className="w-32 h-32 object-contain bg-[var(--background-color)] rounded-lg"
+              />
+            <div className="flex-1 w-full">
+              <CopyField label="Beneficiario" value="Marvin Emilio Moran Xona" />
+            </div>
+          </div>
+
+          </div>
+
+          {/* Nota elegante */}
+          <div className="mt-12 bg-muted p-6 rounded-2xl text-center">
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              Para agilizar el proceso de validación de tu compra, te recomendamos contar con tu comprobante o boleta de pago antes de finalizar el proceso. ¡Gracias por confiar en nosotros!
+            </p>
           </div>
 
         </CardContent>

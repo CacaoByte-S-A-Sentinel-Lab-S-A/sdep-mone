@@ -5,7 +5,7 @@ description: Obtén diamantes y el Pase Starlight en Mobile Legends al mejor pre
 tags: [Diamantes, Pase Starlight]
 category: 	MOBA
 draft: false
-cover: https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg
+cover: /mobile-legends.jpg
 gameSlug: mobile-legends
 gameId: 1  
 ---

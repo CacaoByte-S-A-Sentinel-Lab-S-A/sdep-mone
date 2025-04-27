@@ -2,7 +2,7 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const SdepMoneConfig: Configuration = {
-  title: "SdepMone",
+  title: "",
   appTitle: {
     sdep: "Sdep",
     mone: "Mone",
@@ -30,8 +30,8 @@ const SdepMoneConfig: Configuration = {
     // },
   ],
 
-  username: "SdepMone",
-  sign: "Top 1 de los mejores precios",
+  username: "Contacto",
+  sign: "SdepMone",
   avatarUrl: "/sdepMone.png",
   socialLinks: [
     {
@@ -46,6 +46,10 @@ const SdepMoneConfig: Configuration = {
       icon: "mingcute:whatsapp-fill",
       link: "https://wa.me/50238349425",
     },
+    {
+      icon: "mingcute:mail-fill",
+      link: "mailto:sdepmone@gmail.com", 
+    }
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3
   maxSidebarTagChip: 12,
@@ -53,29 +57,31 @@ const SdepMoneConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg", // Free Fire
-    "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg", // Genshin Impact
-    "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg", // Mobile Legends
+    "/categorias.webp",
+    "/genshin.webp", // Genshin Impact
+    "/mobile-legends.jpg", // Mobile Legends
     "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg", // Honor of Kings
-    "/Fondo_honkai_2.webp", // Honkai Star Rail
-    "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg", // Blood Strike
+    "/hokai.webp", // Honkai Star Rail    
+    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg", // Free Fire
+    "/blood.jpg", // Blood Strike
     "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg", // Zenless Zone Zero
-    "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg", // Arena Breakout
-    "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg", // Farlight 84
-    "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg", // PUBG Mobile
+    "/arena.jpeg", // Arena Breakout
+    "/farlight-84.png", // Farlight 84
+    "/pubg.jpg", // PUBG Mobile
   ],
 
   gameBanner: {
-    "free-fire": "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
-    "genshin-impact": "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg",
-    "mobile-legends": "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg",
+    "sdepMone.png": "/sdepMone.png",
+    "genshin-impact": "/genshin.webp",
+    "mobile-legends": "/mobile-legends.jpg",
     "honor-kings": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg",
-    "honkai-start-rail": "/Fondo_honkai_2.webp",
-    "blood-strike": "https://www.blood-strike.com/m/gw/20230920165203/img/1_d7a9db2.jpg",
+    "free-fire": "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
+    "honkai-start-rail": "/honkai.webp",
+    "blood-strike": "/blood.jpg",
     "zenless-zone-zero": "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
-    "arena-breakout": "https://sm.ign.com/ign_es/cover/a/arena-brea/arena-breakout-infinite_2uy9.jpg",
-    "farlight": "https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg",
-    "pubg": "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/67885c33d4a048f2df9c8af2_66bea0b210c947d3792e798a_pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpeg",
+    "arena-breakout": "/arena.jpeg",
+    "farlight": "/farlight-84.png",
+    "pubg": "/pubg.jpg",
 
   },
 

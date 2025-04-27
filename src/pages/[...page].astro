@@ -17,9 +17,15 @@ export async function getStaticPaths({
   return paginate(postCollections, { pageSize: 5 });
 }
 const { page } = Astro.props ?? {};
+
+// 🔥 Nuevo: obtener todos los covers de los posts
+const dynamicBannerImages = page.data
+  .map((entry) => entry.data.cover)
+  .filter((cover): cover is string => typeof cover === "string"); // 👈 Cast correcto
+
 ---
 
-<Main>
+<Main  title="Todo lo que necesitas para tus juegos móviles, solo en SdepMone" subTitle="Explora lo más reciente" bannerImage={dynamicBannerImages}>
   <div class="space-y-8">
     <div class="w-full space-y-4">
       {

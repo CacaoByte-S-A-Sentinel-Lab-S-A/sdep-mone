@@ -6,7 +6,7 @@ import { GetCoverURLForUnspecifiedEntry } from "../utils/cover";
 export interface Props {
   title?: string;
   subTitle?: string;
-  bannerImage?: string;
+  bannerImage?: string | string[];
   slug?: string;
   titleGame?: string;
 }
@@ -15,14 +15,24 @@ const { title, subTitle, bannerImage, slug, titleGame } = Astro.props ?? {};
 const hasTitle = title !== undefined || subTitle !== undefined;
 const hasHeaderImg = bannerImage !== undefined || slug !== undefined;
 
-let carouselImgsList = SdepMoneConfig.banners;
+let carouselImgsList: string[] = [];
+
+//  Decide si usar bannerImage como carrusel personalizado
+if (Array.isArray(bannerImage) && bannerImage.length > 0) {
+  carouselImgsList = bannerImage;
+} else if (!bannerImage) {
+  carouselImgsList = SdepMoneConfig.banners; // fallback
+}
+
+
 const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
 ---
 
-<div id="banner" class="banner onload-animation-fade-in">
+<div id="banner" class="banner onload-animation-fade-in h-full w-full">
   <div class="transition-main banner-inner h-full w-full">
+
     {
-      !hasHeaderImg && (
+      Array.isArray(bannerImage) && bannerImage.length > 0 ? (
         <div class="carousel">
           <ul id="carousel_imgs">
             {carouselImgsList.map((img, index) => (
@@ -34,16 +44,15 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
             ))}
           </ul>
         </div>
-      )
-    }
-    {
-      hasHeaderImg && (
+      ) : (
         <div class="cover">
-          <img
-            class="item lozad"
-            data-src={bannerImage ?? GetCoverURLForUnspecifiedEntry(slug ?? "")}
-            alt="PostCoverr"
-          />
+      <img
+          class="item lozad object-contain object-top w-full max-h-[1500px]"
+          data-src={typeof bannerImage === "string" ? bannerImage : GetCoverURLForUnspecifiedEntry(slug ?? "")}
+          alt="PostCover"
+        />
+
+
         </div>
       )
     }
@@ -53,11 +62,12 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
       >
         <div class="flex flex-col">
           <h1
-            class:list={[hasTitle ? "title-normal" : "title-index"]}
-            class="title"
-          >
-            {title ?? SdepMoneConfig.title}
-          </h1>
+          class:list={[hasTitle ? "title-normal" : "title-index"]}
+          class="title text-lg sm:text-xl md:text-2xl lg:text-4xl"
+        >
+          {title ?? SdepMoneConfig.title}
+        </h1>
+        
           <!-- <h2 class="subtitle">{titleGame ?? SdepMoneConfig.titleGame }</h2> -->
         </div>
       </div>

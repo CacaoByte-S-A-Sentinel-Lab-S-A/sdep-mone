@@ -18,7 +18,7 @@ const { game } = Astro.props ?? {};
 const bannerImage = SdepMoneConfig.gameBanner[game];
 ---
 
-<MainLayout title={game} subTitle={game} bannerImage={bannerImage} titleGame={game}>
+<MainLayout  bannerImage={bannerImage} titleGame={game}>
   <div class="archives">
     <GameStore
       game={game}
