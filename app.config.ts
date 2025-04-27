@@ -57,7 +57,7 @@ const SdepMoneConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "/sdepMone.png",
+    "/categorias.webp",
     "https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg", // Genshin Impact
     "https://kaleoz-media.seagmcdn.com/kaleoz-store/202407/oss-a2d7eb0b228031097472357bb332d7da.jpg", // Mobile Legends
     "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/video-thumbnails/x90npsk.jpg", // Honor of Kings
