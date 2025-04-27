@@ -1,0 +1,9 @@
+---
+import FAQ from "@/components/faq/faq";
+import MainLayout from "../../layouts/MainLayout.astro";
+export const prerender = false;
+--- 
+<MainLayout >
+
+    <FAQ client:load />
+</MainLayout>
