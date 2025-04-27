@@ -41,18 +41,18 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Mobile Legends es el MOBA (Multiplayer Online Battle Arena) definitivo para dispositivos móviles. Forma tu equipo de 5 jugadores y enfréntate en batallas estratégicas de 5v5 en tiempo real. Elige entre una gran variedad de héroes, domina sus habilidades únicas y trabaja en equipo para destruir la base enemiga. Con partidas rápidas, controles intuitivos y acción intensa, Mobile Legends te ofrece una experiencia de batalla épica estés donde estés. ¡Demuestra tu habilidad y conquista la gloria!",
     productos: {
     diamantes: [
-      { amount: "172", price: "Q32.63", image: "/DiamantesFree.webp" },
-      { amount: "280", price: "Q54.00", image: "/DiamantesFree.webp" },
-      { amount: "344", price: "Q63.00", image: "/DiamantesFree.webp" },
-      { amount: "570", price: "Q105.00", image: "/DiamantesFree.webp" },
-      { amount: "792", price: "Q139.00", image: "/DiamantesFree.webp" },
-      { amount: "964", price: "Q167.00", image: "/DiamantesFree.webp" },
-      { amount: "1050", price: "Q184.00", image: "/DiamantesFree.webp" },
-      { amount: "1756", price: "Q299.00", image: "/DiamantesFree.webp" },
-      { amount: "2711", price: "Q431.00", image: "/DiamantesFree.webp" },
-      { amount: "3688", price: "Q567.00", image: "/DiamantesFree.webp" },
-      { amount: "5532", price: "Q821.00", image: "/DiamantesFree.webp" },
-      { amount: "9288", price: "Q1,358.00", image: "/DiamantesFree.webp" }
+      { amount: "172", price: "Q32.63", image: "/DiamantesFree1.webp" },
+      { amount: "280", price: "Q54.00", image: "/DiamantesFree1.webp" },
+      { amount: "344", price: "Q63.00", image: "/DiamantesFree1.webp" },
+      { amount: "570", price: "Q105.00", image: "/DiamantesFree1.webp" },
+      { amount: "792", price: "Q139.00", image: "/DiamantesFree1.webp" },
+      { amount: "964", price: "Q167.00", image: "/DiamantesFree1.webp" },
+      { amount: "1050", price: "Q184.00", image: "/DiamantesFree2.webp" },
+      { amount: "1756", price: "Q299.00", image: "/DiamantesFree2.webp" },
+      { amount: "2711", price: "Q431.00", image: "/DiamantesFree2.webp" },
+      { amount: "3688", price: "Q567.00", image: "/DiamantesFree2.webp" },
+      { amount: "5532", price: "Q821.00", image: "/DiamantesFree2.webp" },
+      { amount: "9288", price: "Q1,358.00", image: "/DiamantesFree2.webp" }
     ],
     pase: [
       { title: "Semanal", subtitle: "(80+20/día)", price: "Q24.05", image: "/MobileLegendsSemanal.webp" },
