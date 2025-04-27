@@ -5,7 +5,7 @@ description: Recarga créditos y aprovecha recompensas especiales en Blood Strik
 tags: [Créditos, Recompensas]
 category: Shooter Battle Royale
 draft: false
-cover: blood.jpg
+cover: /blood.jpg
 gameSlug: blood-strike
 gameId: 1 
 ---
