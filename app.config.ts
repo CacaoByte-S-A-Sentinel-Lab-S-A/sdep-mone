@@ -66,7 +66,7 @@ const SdepMoneConfig: Configuration = {
     "/blood.jpg", // Blood Strike
     "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg", // Zenless Zone Zero
     "/arena.jpeg", // Arena Breakout
-    "/farlight-84.jpg", // Farlight 84
+    "/farlight-84.png", // Farlight 84
     "/pubg.jpg", // PUBG Mobile
   ],
 
@@ -80,7 +80,7 @@ const SdepMoneConfig: Configuration = {
     "blood-strike": "/blood.jpg",
     "zenless-zone-zero": "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2024/06/Zenless-Zone-Zero_2024_06-28-24_011.jpg",
     "arena-breakout": "/arena.jpeg",
-    "farlight": "/farlight-84.jpg",
+    "farlight": "/farlight-84.png",
     "pubg": "/pubg.jpg",
 
   },

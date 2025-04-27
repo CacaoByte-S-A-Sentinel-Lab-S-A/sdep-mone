@@ -210,11 +210,11 @@ export const gameData: Record<string, GameWithDescription > = {
     description: "Farlight 84 es un juego de disparos en tercera persona en un mundo post-apocalíptico futurista. Los jugadores deben enfrentarse en intensas batallas de batalla real, donde la habilidad y la estrategia son clave para dominar el campo de batalla. Con vehículos futuristas, personajes únicos y una amplia variedad de armas, Farlight 84 ofrece una experiencia llena de acción y emoción. La jugabilidad rápida y dinámica, combinada con un mundo de ciencia ficción vibrante, hará que cada partida sea impredecible y desafiante. ¡Es hora de sobrevivir en el 84!",
     productos: {
     Diamantes: [
-      { amount: "220", price: "Q21.00", image: "/DiamantesFree.webp" },
-      { amount: "330", price: "Q32.00", image: "/DiamantesFree.webp" },
-      { amount: "880", price: "Q83.00", image: "/DiamantesFree.webp" },
-      { amount: "2240", price: "Q204.00", image: "/DiamantesFree.webp" },
-      { amount: "4700", price: "Q374.00", image: "/DiamantesFree.webp" },
+      { amount: "220", price: "Q21.00", image: "/DiamantesFree1.webp" },
+      { amount: "330", price: "Q32.00", image: "/DiamantesFree1.webp" },
+      { amount: "880", price: "Q83.00", image: "/DiamantesFree1.webp" },
+      { amount: "2240", price: "Q204.00", image: "/DiamantesFree2.webp" },
+      { amount: "4700", price: "Q374.00", image: "/DiamantesFree2.webp" },
     ]
   }
 }
