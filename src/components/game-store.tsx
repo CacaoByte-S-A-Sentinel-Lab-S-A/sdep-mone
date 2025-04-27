@@ -121,7 +121,7 @@ export default function GameStore({ game, gameData }: GameStoreProps) {
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious className="left-0 bg-orange-500 hover:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-600 border-none text-white hover:text-white" />
+                    <CarouselPrevious className="left-0 bg-orange-500 hover:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-600 border-none text-white hover:text-white " />
                     <CarouselNext className="right-0 bg-orange-500 hover:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-600 border-none text-white hover:text-white" />
                   </Carousel>
                   <div className="flex justify-center mt-4">
