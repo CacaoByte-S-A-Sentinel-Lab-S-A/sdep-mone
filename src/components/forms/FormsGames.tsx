@@ -79,7 +79,7 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
         detallesCuenta += `\n- Servidor: ${servidor}`;
       }
   
-      const mensaje = `¡Hola SdeepMone! 👋\n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n${detallesCuenta}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! 🙌`;
+      const mensaje = `¡Hola SdeepMone! \n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n${detallesCuenta}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! `;
   
       const numeroWhatsApp = "50253326756"; 
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
