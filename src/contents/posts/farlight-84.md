@@ -5,7 +5,7 @@ description: Recarga oro y consigue el Pase de Batalla en Farlight 84 para desbl
 tags: [Oro, Pase de Batalla]
 category: Shooter Futurista
 draft: false
-cover: https://i.blogs.es/ef8629/farlight-84-16mbi/1366_2000.jpeg
+cover: /farlight-84.png
 gameSlug: farlight
 gameId: 1  
 ---
