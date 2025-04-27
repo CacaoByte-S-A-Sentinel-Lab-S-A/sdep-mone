@@ -229,7 +229,7 @@
 }
 
 .archives {
-  @apply mx-3 flex flex-col rounded-2xl bg-[var(--card-color)] px-10 py-5 lg:mx-0 lg:p-10;
+  @apply mx-3 flex flex-col rounded-2xl bg-[var(--card-color)] px-8 py-5 lg:mx-0 lg:p-8;
 }
 
 .main-container {
