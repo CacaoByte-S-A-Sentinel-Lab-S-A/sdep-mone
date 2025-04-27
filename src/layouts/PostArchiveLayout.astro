@@ -17,22 +17,22 @@ export interface Props {
 
 const { archiveMap, title, subTitle, slug, titleGame } = Astro.props ?? {};
 
-let dynamicBannerImages: string[] = [];
+// 🔥 Buscar solo la primera imagen
+let dynamicBannerImage: string | undefined = undefined;
 
 if (archiveMap.size !== 0) {
   for (const year of archiveMap.keys()) {
     const entries = archiveMap.get(year) ?? [];
     for (const entry of entries) {
       if (entry.cover) {
-        dynamicBannerImages.push(entry.cover);
+        dynamicBannerImage = entry.cover;
+        break; // 🔥 Solo la primera imagen encontrada
       }
     }
+    if (dynamicBannerImage) break; // 🔥 Salir si ya la encontró
   }
 }
-
-const dynamicBannerImage = dynamicBannerImages.length > 0 ? dynamicBannerImages : undefined;
 ---
-
 
 <Main
   title={title}
@@ -46,7 +46,7 @@ const dynamicBannerImage = dynamicBannerImages.length > 0 ? dynamicBannerImages 
       [...archiveMap.keys()].map((year) => (
         <div
           class="onload-animation"
-          style={`animation-delay: calc(var(--onload-animation-delay)  * var(--onload-animation-interval));`}
+          style={`animation-delay: calc(var(--onload-animation-delay) * var(--onload-animation-interval));`}
         >
           {archiveMap.get(year)?.map((entry) => (
             <div class="mb-6 w-full">
