@@ -2,7 +2,7 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const SdepMoneConfig: Configuration = {
-  title: "SdepMone",
+  title: "",
   appTitle: {
     sdep: "Sdep",
     mone: "Mone",

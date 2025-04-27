@@ -62,11 +62,12 @@ const carouselAnimationTime = `${carouselImgsList.length * 6}s`;
       >
         <div class="flex flex-col">
           <h1
-            class:list={[hasTitle ? "title-normal" : "title-index"]}
-            class="title"
-          >
-            {title ?? SdepMoneConfig.title}
-          </h1>
+          class:list={[hasTitle ? "title-normal" : "title-index"]}
+          class="title text-lg sm:text-xl md:text-2xl lg:text-4xl"
+        >
+          {title ?? SdepMoneConfig.title}
+        </h1>
+        
           <!-- <h2 class="subtitle">{titleGame ?? SdepMoneConfig.titleGame }</h2> -->
         </div>
       </div>
