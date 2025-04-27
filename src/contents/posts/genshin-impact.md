@@ -5,7 +5,7 @@ description: Mejora tu cuenta de Genshin Impact con cristales y el Pase de Batal
 tags: [Cristales, Pase de Batalla]
 category: RPG de Mundo Abierto
 draft: false
-cover: genshin.webp
+cover: /genshin.webp
 gameSlug: genshin-impact 
 gameId: 1  
 ---

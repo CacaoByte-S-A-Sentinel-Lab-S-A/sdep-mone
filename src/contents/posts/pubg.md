@@ -5,7 +5,7 @@ description: Compra UC y mejora tu experiencia con el Royale Pass de PUBG Mobile
 tags: [UC, Royale Pass]
 category: Battle Royale
 draft: false
-cover: pubg.jpg
+cover: /pubg.jpg
 gameSlug: pubg
 gameId: 1  
 ---
