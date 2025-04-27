@@ -175,8 +175,8 @@ export const gameData: Record<string, GameWithDescription > = {
       { title: "Compuesto", price: "Q82.00", image: "/MaletinCompuesto.webp" },
     ],
     otros: [
-      { title: "Paquete Principiante", price: "Q9.00", image: "/ArenaBreakoutOtros.webp" },
-      { title: "Elite De Prueba", price: "Q47.00", image: "/ArenaBreakoutOtros.webp" }
+      { title: "Paquete Principiante", price: "Q9.00", image: "/paquetePrincipiante.webp" },
+      { title: "Elite De Prueba", price: "Q47.00", image: "/paquetePrincipiante.webp" }
     ]
   }
   },
