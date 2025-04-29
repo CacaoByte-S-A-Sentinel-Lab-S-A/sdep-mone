@@ -8,7 +8,7 @@ import type { FAQItem } from "@/data/faq-data";
 
 export default function FAQ() {
   return (
-    <div className="w-full max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)] p-6 lg:p-8">
+    <div className="w-full max-w-[95vw] sm:max-w-[90vw] md:max-w-2xl lg:max-w-4xl mx-auto rounded-3xl bg-[var(--card-color)] text-[var(--text-color)] px-4 py-6 sm:px-6 lg:p-8">
       <div className="text-3xl font-bold text-primary mb-6">Preguntas Frecuentes</div>
 
       <Accordion type="single" collapsible className="w-full border-none select-none">
