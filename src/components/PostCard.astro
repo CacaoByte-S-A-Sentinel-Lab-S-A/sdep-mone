@@ -55,12 +55,12 @@ const { time, wordCount } = props.readingMetadata;
         </div> -->
         {
           props.category && (
-            <div class="flex flex-row items-center space-x-2 rounded-md bg-black/50 px-1.5 py-0.5 text-[var(--primary-color-lighten)] dark:text-[var(--text-color)]">
-              <Icon name="dashicons:category" />
-              <span class="max-w-28 truncate select-none">
-                {props.category}
-              </span>
-            </div>
+<div class="flex flex-row items-center space-x-2 rounded-md bg-white/40 backdrop-blur-sm dark:bg-white/20 px-2 py-1 text-[var(--text-color)]">
+  <Icon name="dashicons:category" />
+  <span class="max-w-28 truncate select-none">{props.category}</span>
+</div>
+
+
           )
         }
       </div>
@@ -96,7 +96,7 @@ const { time, wordCount } = props.readingMetadata;
               <li class="data space-x-1.5">
                 <PostCardInfoIcon name="dashicons:category" />
                 <a
-                  class="rounded-md px-1.5 py-0.5 text-[var(--text-color-lighten)] transition-all select-none hover:bg-[var(--primary-color-lighten)] hover:text-[var(--primary-color)]"
+                  class="rounded-md px-1.5 py-0.5 text-[var(--text-color-lighten)] transition-all select-none"
                   href={`/categories/${IdToSlug(props.category)}`}
                 >
                   {props.category}
