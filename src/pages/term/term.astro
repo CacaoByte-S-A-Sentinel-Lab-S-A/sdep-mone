@@ -1,9 +1,11 @@
 ---
+// Astro frontmatter
 import TERM from "@/components/term/term";
 import MainLayout from "../../layouts/MainLayout.astro";
 export const prerender = false;
---- 
-<MainLayout >
-
+---
+<MainLayout>
+  <div class="">
     <TERM client:load />
+  </div>
 </MainLayout>
