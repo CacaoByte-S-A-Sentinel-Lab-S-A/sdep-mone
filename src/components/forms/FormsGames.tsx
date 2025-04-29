@@ -24,7 +24,8 @@ import { FormsGames } from "@/Models/forms/FormsGames";
 const formSchema = z.object({
   name_1110064419: z.string().min(2).max(20), 
   name_2435070634: z.string().min(1),         
-  name_9680451077: z.string().min(1),         
+  name_9680451077: z.string().min(1),
+  name_7004455052: z.string().min(1),          
   name_5232852522: z.string().min(0),        
   name_4833852072: z.string().min(0),        
   name_1930221828: z.boolean(),               
@@ -64,10 +65,11 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       const juego = values.name_1110064419;
       const monedas = values.name_2435070634;
       const idCuenta = values.name_9680451077;
+      const nombreJugador = values.name_7004455052; // 🆕 Nombre del jugador
       const region = values.name_5232852522;
       const servidor = values.name_4833852072;
   
-      let detallesCuenta = `- ID de cuenta: ${idCuenta}`;
+      let detallesCuenta = `- ID de cuenta: ${idCuenta}\n- Nombre del jugador: ${nombreJugador}`; // 🆕 Agregado nombre
   
       // Solo agregamos Región si el juego necesita Región
       if (["zenless-zone-zero", "honkai-start-rail", "genshin-impact"].includes(gameName)) {
@@ -79,9 +81,9 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
         detallesCuenta += `\n- Servidor: ${servidor}`;
       }
   
-      const mensaje = `¡Hola SdeepMone! \n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego}".\n\nLos detalles de mi cuenta son los siguientes:\n${detallesCuenta}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias! `;
+      const mensaje = `¡Hola SdeepMone! \n\nQuisiera solicitar una recarga de ${monedas} monedas para el juego "${juego} mi nombre de jugador es ${nombreJugador}".\n\nLos detalles de mi cuenta son los siguientes:\n${detallesCuenta}\n\nQuedo atento(a) para completar el proceso. ¡Muchas gracias!`;
   
-      const numeroWhatsApp = "50253326756"; 
+      const numeroWhatsApp = "50238850854"; 
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   
       window.open(url, "_blank");
@@ -91,6 +93,7 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
       toast.error("Failed to submit the form. Please try again.");
     }
   }
+  
   
   
 

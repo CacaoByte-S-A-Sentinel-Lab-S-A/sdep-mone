@@ -42,6 +42,20 @@ export const FormsGames = [
       "variant": "Input",
       "min": 1
     },
+        {
+      "checked": true,
+      "description": "Nombre del jugador al que pertenece la cuenta",
+      "disabled": false,
+      "label": "Nombre del jugador",
+      "name": "name_7004455052",
+      "placeholder": "Nombre del jugador",
+      "required": true,
+      "rowIndex": 0,
+      "type": "",
+      "value": "",
+      "variant": "Input",
+      "min": 1
+    },
     {
       "checked": true,
       "description": "Region",
@@ -72,11 +86,11 @@ export const FormsGames = [
     },
     {
       "checked": true,
-      "description": "Una vez realizado el pago, el cliente deberá enviar una boleta o comprobante por WhatsApp como verificación. El comprobante fiscal es opcional y puede solicitarse vía correo: sdepmone@gmail.com.Teléfono oficial de atención: +5025 3326 756",
+      "description": "",
       "disabled": false,
-      "label": "Declaro que he leído y acepto de manera voluntaria los Términos y Condiciones que regulan el uso de esta plataforma, incluyendo el tratamiento y resguardo de los datos personales solicitados, así como las políticas, condiciones y limitaciones aplicables a los métodos de pago disponibles para realizar la compra. Entiendo que es mi responsabilidad revisar esta información antes de completar cualquier transacción.",
+      "label": "Acepto los términos y condiciones.",
       "name": "name_1930221828",
-      "placeholder": "Acepto que los datos introducidos en este formulario es la correcta correspondiente a como se solicita y toma en cuenta los metodos de pagos disponibles para la compra.",
+      "placeholder": "",
       "required": true,
       "rowIndex": 0,
       "type": "",
