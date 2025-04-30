@@ -149,7 +149,17 @@ export default function FormsGamesWhatsApp({ gameName, coinAmount }: MyFormProps
                           onCheckedChange={(checked) => innerField.onChange(checked)}
                         />
                         <div className="space-y-1 leading-none">
-                          <FormLabel className="font-medium">{field.label}</FormLabel>
+                        <FormLabel className="font-medium">
+                          Acepto los{" "}
+                          <a
+                            href="/term/term"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary underline hover:opacity-80"
+                          >
+                            términos y condiciones
+                          </a>.
+                        </FormLabel>
                           <FormDescription>{field.description}</FormDescription>
                         </div>
                       </div>
